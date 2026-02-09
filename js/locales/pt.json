@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Cronômetro Pomodoro",
+    "subtitle": "Aumente sua produtividade com sessões de trabalho focadas"
+  },
+  "timer": {
+    "work": "Tempo de trabalho",
+    "break": "Tempo de pausa",
+    "longBreak": "Pausa longa",
+    "minutes": "min",
+    "seconds": "seg"
+  },
+  "buttons": {
+    "start": "Iniciar",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "reset": "Reiniciar",
+    "settings": "Configurações",
+    "stats": "Estatísticas",
+    "aiAnalysis": "Análise IA",
+    "focus": "Modo foco",
+    "exit": "Sair"
+  },
+  "settings": {
+    "title": "Configurações",
+    "workTime": "Tempo de trabalho (minutos)",
+    "breakTime": "Tempo de pausa (minutos)",
+    "longBreakTime": "Tempo de pausa longa (minutos)",
+    "cycleCount": "Ciclos antes da pausa longa",
+    "notification": "Ativar notificações",
+    "sound": "Som de conclusão",
+    "save": "Salvar",
+    "cancel": "Cancelar"
+  },
+  "stats": {
+    "title": "Estatísticas",
+    "today": "Hoje",
+    "thisWeek": "Esta semana",
+    "pomodoroCount": "Pomodoros concluídos",
+    "totalTime": "Tempo total de foco",
+    "averagePerDay": "Média diária",
+    "goal": "Meta de hoje",
+    "completed": "Concluído",
+    "remaining": "Restante",
+    "noData": "Nenhum dado disponível"
+  },
+  "premium": {
+    "analysis": "Análise de produtividade IA",
+    "watchAd": "Assistir anúncio",
+    "unlock": "Desbloquear premium",
+    "details": "Ver análise detalhada",
+    "insights": "Insights de produtividade",
+    "focus": "Pontuação de foco",
+    "consistency": "Consistência",
+    "efficiency": "Eficiência",
+    "recommendation": "Recomendação"
+  },
+  "notifications": {
+    "workComplete": "Tempo de trabalho encerrado!",
+    "breakComplete": "Tempo de pausa encerrado!",
+    "longBreakComplete": "Pausa longa encerrada!"
+  },
+  "goals": {
+    "title": "Meta de hoje",
+    "setGoal": "Definir meta",
+    "targetPomodoros": "Alvo de Pomodoros",
+    "save": "Salvar",
+    "progress": "Progresso"
+  },
+  "messages": {
+    "cycleComplete": "Você completou um ciclo!",
+    "longBreakTime": "É hora de uma pausa longa!",
+    "goalReached": "Meta alcançada! Parabéns!",
+    "offline": "Você está offline"
+  }
+}

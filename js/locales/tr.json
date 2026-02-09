@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Pomodoro Zamanlayıcı",
+    "subtitle": "Üretkenliğinizi odaklanmış iş seansları ile artırın"
+  },
+  "timer": {
+    "work": "Çalışma zamanı",
+    "break": "Mola zamanı",
+    "longBreak": "Uzun mola",
+    "minutes": "dak",
+    "seconds": "san"
+  },
+  "buttons": {
+    "start": "Başla",
+    "pause": "Duraklat",
+    "resume": "Devam et",
+    "reset": "Sıfırla",
+    "settings": "Ayarlar",
+    "stats": "İstatistikler",
+    "aiAnalysis": "AI Analizi",
+    "focus": "Odak modu",
+    "exit": "Çık"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "workTime": "Çalışma zamanı (dakika)",
+    "breakTime": "Mola zamanı (dakika)",
+    "longBreakTime": "Uzun mola zamanı (dakika)",
+    "cycleCount": "Uzun moladan önce döngü sayısı",
+    "notification": "Bildirimleri etkinleştir",
+    "sound": "Tamamlama sesi",
+    "save": "Kaydet",
+    "cancel": "İptal"
+  },
+  "stats": {
+    "title": "İstatistikler",
+    "today": "Bugün",
+    "thisWeek": "Bu hafta",
+    "pomodoroCount": "Tamamlanan Pomodoro",
+    "totalTime": "Toplam odaklanma zamanı",
+    "averagePerDay": "Günlük ortalama",
+    "goal": "Bugünün hedefi",
+    "completed": "Tamamlandı",
+    "remaining": "Kalan",
+    "noData": "Veri yok"
+  },
+  "premium": {
+    "analysis": "AI üretkenlik analizi",
+    "watchAd": "Reklam izle",
+    "unlock": "Premium'u aç",
+    "details": "Detaylı analizi görüntüle",
+    "insights": "Üretkenlik İçgörüleri",
+    "focus": "Odak puanı",
+    "consistency": "Tutarlılık",
+    "efficiency": "Verimlilik",
+    "recommendation": "Tavsiye"
+  },
+  "notifications": {
+    "workComplete": "Çalışma zamanı bitti!",
+    "breakComplete": "Mola zamanı bitti!",
+    "longBreakComplete": "Uzun mola zamanı bitti!"
+  },
+  "goals": {
+    "title": "Bugünün hedefi",
+    "setGoal": "Hedef belirle",
+    "targetPomodoros": "Hedef Pomodoro sayısı",
+    "save": "Kaydet",
+    "progress": "İlerleme"
+  },
+  "messages": {
+    "cycleComplete": "Bir döngüyü tamamladınız!",
+    "longBreakTime": "Uzun mola zamanı!",
+    "goalReached": "Hedef başarıldı! Tebrikler!",
+    "offline": "Çevrimdışısınız"
+  }
+}

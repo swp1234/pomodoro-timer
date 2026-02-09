@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Penghitung Waktu Pomodoro",
+    "subtitle": "Tingkatkan produktivitas Anda dengan sesi kerja terfokus"
+  },
+  "timer": {
+    "work": "Waktu kerja",
+    "break": "Waktu istirahat",
+    "longBreak": "Istirahat panjang",
+    "minutes": "mnt",
+    "seconds": "dtk"
+  },
+  "buttons": {
+    "start": "Mulai",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "reset": "Setel ulang",
+    "settings": "Pengaturan",
+    "stats": "Statistik",
+    "aiAnalysis": "Analisis AI",
+    "focus": "Mode fokus",
+    "exit": "Keluar"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "workTime": "Waktu kerja (menit)",
+    "breakTime": "Waktu istirahat (menit)",
+    "longBreakTime": "Waktu istirahat panjang (menit)",
+    "cycleCount": "Siklus sebelum istirahat panjang",
+    "notification": "Aktifkan notifikasi",
+    "sound": "Suara penyelesaian",
+    "save": "Simpan",
+    "cancel": "Batal"
+  },
+  "stats": {
+    "title": "Statistik",
+    "today": "Hari ini",
+    "thisWeek": "Minggu ini",
+    "pomodoroCount": "Pomodoro selesai",
+    "totalTime": "Total waktu fokus",
+    "averagePerDay": "Rata-rata harian",
+    "goal": "Target hari ini",
+    "completed": "Selesai",
+    "remaining": "Tersisa",
+    "noData": "Tidak ada data"
+  },
+  "premium": {
+    "analysis": "Analisis produktivitas AI",
+    "watchAd": "Tonton iklan",
+    "unlock": "Buka premium",
+    "details": "Lihat analisis detail",
+    "insights": "Wawasan produktivitas",
+    "focus": "Skor fokus",
+    "consistency": "Konsistensi",
+    "efficiency": "Efisiensi",
+    "recommendation": "Rekomendasi"
+  },
+  "notifications": {
+    "workComplete": "Waktu kerja telah berakhir!",
+    "breakComplete": "Waktu istirahat telah berakhir!",
+    "longBreakComplete": "Istirahat panjang telah berakhir!"
+  },
+  "goals": {
+    "title": "Target hari ini",
+    "setGoal": "Tetapkan target",
+    "targetPomodoros": "Target Pomodoro",
+    "save": "Simpan",
+    "progress": "Kemajuan"
+  },
+  "messages": {
+    "cycleComplete": "Anda menyelesaikan satu siklus!",
+    "longBreakTime": "Saatnya istirahat panjang!",
+    "goalReached": "Target tercapai! Selamat!",
+    "offline": "Anda sedang offline"
+  }
+}

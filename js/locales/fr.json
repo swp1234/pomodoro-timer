@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Minuteur Pomodoro",
+    "subtitle": "Augmentez votre productivité avec des séances de travail concentrées"
+  },
+  "timer": {
+    "work": "Temps de travail",
+    "break": "Temps de pause",
+    "longBreak": "Pause longue",
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "buttons": {
+    "start": "Commencer",
+    "pause": "Pausiser",
+    "resume": "Reprendre",
+    "reset": "Réinitialiser",
+    "settings": "Paramètres",
+    "stats": "Statistiques",
+    "aiAnalysis": "Analyse IA",
+    "focus": "Mode focus",
+    "exit": "Quitter"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "workTime": "Temps de travail (minutes)",
+    "breakTime": "Temps de pause (minutes)",
+    "longBreakTime": "Temps de pause longue (minutes)",
+    "cycleCount": "Cycles avant pause longue",
+    "notification": "Activer les notifications",
+    "sound": "Son d'achèvement",
+    "save": "Enregistrer",
+    "cancel": "Annuler"
+  },
+  "stats": {
+    "title": "Statistiques",
+    "today": "Aujourd'hui",
+    "thisWeek": "Cette semaine",
+    "pomodoroCount": "Pomodoros terminés",
+    "totalTime": "Temps de focus total",
+    "averagePerDay": "Moyenne quotidienne",
+    "goal": "Objectif d'aujourd'hui",
+    "completed": "Terminé",
+    "remaining": "Restant",
+    "noData": "Aucune donnée"
+  },
+  "premium": {
+    "analysis": "Analyse de productivité IA",
+    "watchAd": "Regarder une publicité",
+    "unlock": "Débloquer premium",
+    "details": "Afficher l'analyse détaillée",
+    "insights": "Insights de productivité",
+    "focus": "Score de focus",
+    "consistency": "Cohérence",
+    "efficiency": "Efficacité",
+    "recommendation": "Recommandation"
+  },
+  "notifications": {
+    "workComplete": "Temps de travail terminé!",
+    "breakComplete": "Temps de pause terminé!",
+    "longBreakComplete": "Pause longue terminée!"
+  },
+  "goals": {
+    "title": "Objectif d'aujourd'hui",
+    "setGoal": "Définir un objectif",
+    "targetPomodoros": "Objectif de Pomodoros",
+    "save": "Enregistrer",
+    "progress": "Progression"
+  },
+  "messages": {
+    "cycleComplete": "Vous avez terminé un cycle!",
+    "longBreakTime": "C'est l'heure de la pause longue!",
+    "goalReached": "Objectif atteint! Félicitations!",
+    "offline": "Vous êtes hors ligne"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Pomodoro-Timer",
+    "subtitle": "Steigern Sie Ihre Produktivität mit konzentrierten Arbeitssitzungen"
+  },
+  "timer": {
+    "work": "Arbeitszeit",
+    "break": "Pausenzeit",
+    "longBreak": "Lange Pause",
+    "minutes": "Min",
+    "seconds": "Sek"
+  },
+  "buttons": {
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "reset": "Zurücksetzen",
+    "settings": "Einstellungen",
+    "stats": "Statistiken",
+    "aiAnalysis": "KI-Analyse",
+    "focus": "Fokus-Modus",
+    "exit": "Beenden"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "workTime": "Arbeitszeit (Minuten)",
+    "breakTime": "Pausenzeit (Minuten)",
+    "longBreakTime": "Lange Pausenzeit (Minuten)",
+    "cycleCount": "Zyklen vor langer Pause",
+    "notification": "Benachrichtigungen aktivieren",
+    "sound": "Fertigstellungston",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
+  },
+  "stats": {
+    "title": "Statistiken",
+    "today": "Heute",
+    "thisWeek": "Diese Woche",
+    "pomodoroCount": "Abgeschlossene Pomodoros",
+    "totalTime": "Gesamte Fokuszeit",
+    "averagePerDay": "Täglich durchschnittlich",
+    "goal": "Heutiges Ziel",
+    "completed": "Abgeschlossen",
+    "remaining": "Verbleibend",
+    "noData": "Keine Daten verfügbar"
+  },
+  "premium": {
+    "analysis": "KI-Produktivitätsanalyse",
+    "watchAd": "Anzeige ansehen",
+    "unlock": "Premium freischalten",
+    "details": "Detaillierte Analyse anzeigen",
+    "insights": "Produktivitätserkenntnisse",
+    "focus": "Fokus-Score",
+    "consistency": "Konsistenz",
+    "efficiency": "Effizienz",
+    "recommendation": "Empfehlung"
+  },
+  "notifications": {
+    "workComplete": "Arbeitszeit beendet!",
+    "breakComplete": "Pausenzeit beendet!",
+    "longBreakComplete": "Lange Pausenzeit beendet!"
+  },
+  "goals": {
+    "title": "Heutiges Ziel",
+    "setGoal": "Ziel setzen",
+    "targetPomodoros": "Ziel-Pomodoros",
+    "save": "Speichern",
+    "progress": "Fortschritt"
+  },
+  "messages": {
+    "cycleComplete": "Sie haben einen Zyklus abgeschlossen!",
+    "longBreakTime": "Zeit für eine lange Pause!",
+    "goalReached": "Ziel erreicht! Glückwunsch!",
+    "offline": "Sie sind offline"
+  }
+}

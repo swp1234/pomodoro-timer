@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "पोमोडोरो टाइमर",
+    "subtitle": "केंद्रित कार्य सत्र के साथ अपनी उत्पादकता बढ़ाएं"
+  },
+  "timer": {
+    "work": "कार्य समय",
+    "break": "विश्राम समय",
+    "longBreak": "लंबा विश्राम",
+    "minutes": "मिनट",
+    "seconds": "सेकंड"
+  },
+  "buttons": {
+    "start": "शुरू",
+    "pause": "रोकें",
+    "resume": "जारी रखें",
+    "reset": "रीसेट",
+    "settings": "सेटिंग्स",
+    "stats": "आँकड़े",
+    "aiAnalysis": "AI विश्लेषण",
+    "focus": "फोकस मोड",
+    "exit": "बाहर निकलें"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "workTime": "कार्य समय (मिनट)",
+    "breakTime": "विश्राम समय (मिनट)",
+    "longBreakTime": "लंबा विश्राम समय (मिनट)",
+    "cycleCount": "लंबे विश्राम से पहले चक्र",
+    "notification": "सूचनाएँ सक्षम करें",
+    "sound": "पूरा करने की आवाज़",
+    "save": "सहेजें",
+    "cancel": "रद्द करें"
+  },
+  "stats": {
+    "title": "आँकड़े",
+    "today": "आज",
+    "thisWeek": "इस हफ्ते",
+    "pomodoroCount": "पूर्ण पोमोडोरो",
+    "totalTime": "कुल फोकस समय",
+    "averagePerDay": "दैनिक औसत",
+    "goal": "आज का लक्ष्य",
+    "completed": "पूर्ण",
+    "remaining": "शेष",
+    "noData": "कोई डेटा नहीं"
+  },
+  "premium": {
+    "analysis": "AI उत्पादकता विश्लेषण",
+    "watchAd": "विज्ञापन देखें",
+    "unlock": "प्रीमियम अनलॉक करें",
+    "details": "विस्तृत विश्लेषण देखें",
+    "insights": "उत्पादकता अंतर्दृष्टि",
+    "focus": "फोकस स्कोर",
+    "consistency": "सुसंगतता",
+    "efficiency": "दक्षता",
+    "recommendation": "सिफारिश"
+  },
+  "notifications": {
+    "workComplete": "कार्य समय समाप्त!",
+    "breakComplete": "विश्राम समय समाप्त!",
+    "longBreakComplete": "लंबा विश्राम समाप्त!"
+  },
+  "goals": {
+    "title": "आज का लक्ष्य",
+    "setGoal": "लक्ष्य सेट करें",
+    "targetPomodoros": "लक्ष्य पोमोडोरो",
+    "save": "सहेजें",
+    "progress": "प्रगति"
+  },
+  "messages": {
+    "cycleComplete": "आपने एक चक्र पूर्ण किया!",
+    "longBreakTime": "लंबे विश्राम का समय है!",
+    "goalReached": "लक्ष्य प्राप्त! बधाई हो!",
+    "offline": "आप ऑफलाइन हैं"
+  }
+}

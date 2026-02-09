@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "番茄工作法计时器",
+    "subtitle": "提升您的生产力"
+  },
+  "timer": {
+    "work": "工作时间",
+    "break": "休息时间",
+    "longBreak": "长休息",
+    "minutes": "分钟",
+    "seconds": "秒"
+  },
+  "buttons": {
+    "start": "开始",
+    "pause": "暂停",
+    "resume": "继续",
+    "reset": "重置",
+    "settings": "设置",
+    "stats": "统计",
+    "aiAnalysis": "AI分析",
+    "focus": "专注模式",
+    "exit": "退出"
+  },
+  "settings": {
+    "title": "设置",
+    "workTime": "工作时间（分钟）",
+    "breakTime": "休息时间（分钟）",
+    "longBreakTime": "长休息时间（分钟）",
+    "cycleCount": "长休息前的周期数",
+    "notification": "启用通知",
+    "sound": "完成声音",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "stats": {
+    "title": "统计",
+    "today": "今天",
+    "thisWeek": "本周",
+    "pomodoroCount": "完成的番茄",
+    "totalTime": "总专注时间",
+    "averagePerDay": "每日平均",
+    "goal": "今天的目标",
+    "completed": "已完成",
+    "remaining": "剩余",
+    "noData": "暂无数据"
+  },
+  "premium": {
+    "analysis": "AI生产力分析",
+    "watchAd": "观看广告",
+    "unlock": "解锁高级功能",
+    "details": "查看详细分析",
+    "insights": "生产力洞察",
+    "focus": "专注力评分",
+    "consistency": "持续性",
+    "efficiency": "效率",
+    "recommendation": "建议"
+  },
+  "notifications": {
+    "workComplete": "工作时间结束！",
+    "breakComplete": "休息时间结束！",
+    "longBreakComplete": "长休息时间结束！"
+  },
+  "goals": {
+    "title": "今天的目标",
+    "setGoal": "设置目标",
+    "targetPomodoros": "目标番茄数",
+    "save": "保存",
+    "progress": "进度"
+  },
+  "messages": {
+    "cycleComplete": "您完成了一个周期！",
+    "longBreakTime": "是时候长休息了！",
+    "goalReached": "目标达成！祝贺您！",
+    "offline": "您处于离线状态"
+  }
+}

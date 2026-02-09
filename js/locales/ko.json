@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "포모도로 타이머",
+    "subtitle": "집중력을 높이는 생산성 도구"
+  },
+  "timer": {
+    "work": "작업 시간",
+    "break": "휴식 시간",
+    "longBreak": "긴 휴식",
+    "minutes": "분",
+    "seconds": "초"
+  },
+  "buttons": {
+    "start": "시작",
+    "pause": "일시정지",
+    "resume": "재개",
+    "reset": "초기화",
+    "settings": "설정",
+    "stats": "통계",
+    "aiAnalysis": "AI 분석",
+    "focus": "집중 모드",
+    "exit": "나가기"
+  },
+  "settings": {
+    "title": "설정",
+    "workTime": "작업 시간 (분)",
+    "breakTime": "휴식 시간 (분)",
+    "longBreakTime": "긴 휴식 시간 (분)",
+    "cycleCount": "긴 휴식까지 사이클 수",
+    "notification": "알림 활성화",
+    "sound": "완료 알림음",
+    "save": "저장",
+    "cancel": "취소"
+  },
+  "stats": {
+    "title": "통계",
+    "today": "오늘",
+    "thisWeek": "이번 주",
+    "pomodoroCount": "완료한 포모도로",
+    "totalTime": "총 집중 시간",
+    "averagePerDay": "일일 평균",
+    "goal": "오늘의 목표",
+    "completed": "완료됨",
+    "remaining": "남은 시간",
+    "noData": "데이터가 없습니다"
+  },
+  "premium": {
+    "analysis": "AI 생산성 분석",
+    "watchAd": "광고 시청하기",
+    "unlock": "프리미엄 해제",
+    "details": "상세 분석 보기",
+    "insights": "생산성 인사이트",
+    "focus": "집중력",
+    "consistency": "꾸준함",
+    "efficiency": "효율성",
+    "recommendation": "추천사항"
+  },
+  "notifications": {
+    "workComplete": "작업 시간이 끝났습니다!",
+    "breakComplete": "휴식 시간이 끝났습니다!",
+    "longBreakComplete": "긴 휴식 시간이 끝났습니다!"
+  },
+  "goals": {
+    "title": "오늘의 목표",
+    "setGoal": "목표 설정",
+    "targetPomodoros": "목표 포모도로 수",
+    "save": "저장",
+    "progress": "진행률"
+  },
+  "messages": {
+    "cycleComplete": "한 사이클을 완료했습니다!",
+    "longBreakTime": "긴 휴식 시간입니다!",
+    "goalReached": "목표를 달성했습니다! 축하합니다!",
+    "offline": "오프라인 상태입니다"
+  }
+}

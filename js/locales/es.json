@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Temporizador Pomodoro",
+    "subtitle": "Aumenta tu productividad con sesiones de trabajo concentrado"
+  },
+  "timer": {
+    "work": "Tiempo de trabajo",
+    "break": "Tiempo de descanso",
+    "longBreak": "Descanso largo",
+    "minutes": "min",
+    "seconds": "seg"
+  },
+  "buttons": {
+    "start": "Iniciar",
+    "pause": "Pausar",
+    "resume": "Reanudar",
+    "reset": "Reiniciar",
+    "settings": "Configuración",
+    "stats": "Estadísticas",
+    "aiAnalysis": "Análisis IA",
+    "focus": "Modo enfoque",
+    "exit": "Salir"
+  },
+  "settings": {
+    "title": "Configuración",
+    "workTime": "Tiempo de trabajo (minutos)",
+    "breakTime": "Tiempo de descanso (minutos)",
+    "longBreakTime": "Tiempo de descanso largo (minutos)",
+    "cycleCount": "Ciclos antes de descanso largo",
+    "notification": "Habilitar notificaciones",
+    "sound": "Sonido de finalización",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "today": "Hoy",
+    "thisWeek": "Esta semana",
+    "pomodoroCount": "Pomodoros completados",
+    "totalTime": "Tiempo de enfoque total",
+    "averagePerDay": "Promedio diario",
+    "goal": "Objetivo de hoy",
+    "completed": "Completado",
+    "remaining": "Restante",
+    "noData": "Sin datos disponibles"
+  },
+  "premium": {
+    "analysis": "Análisis de productividad IA",
+    "watchAd": "Ver anuncio",
+    "unlock": "Desbloquear premium",
+    "details": "Ver análisis detallado",
+    "insights": "Perspectivas de productividad",
+    "focus": "Puntuación de enfoque",
+    "consistency": "Consistencia",
+    "efficiency": "Eficiencia",
+    "recommendation": "Recomendación"
+  },
+  "notifications": {
+    "workComplete": "¡Se acabó el tiempo de trabajo!",
+    "breakComplete": "¡Se acabó el tiempo de descanso!",
+    "longBreakComplete": "¡Se acabó el descanso largo!"
+  },
+  "goals": {
+    "title": "Objetivo de hoy",
+    "setGoal": "Establecer objetivo",
+    "targetPomodoros": "Objetivo de pomodoros",
+    "save": "Guardar",
+    "progress": "Progreso"
+  },
+  "messages": {
+    "cycleComplete": "¡Completaste un ciclo!",
+    "longBreakTime": "¡Es hora del descanso largo!",
+    "goalReached": "¡Objetivo alcanzado! ¡Felicitaciones!",
+    "offline": "Estás desconectado"
+  }
+}

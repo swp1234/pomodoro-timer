@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Pomodoro Timer",
+    "subtitle": "Boost your productivity with focused work sessions"
+  },
+  "timer": {
+    "work": "Work Time",
+    "break": "Break Time",
+    "longBreak": "Long Break",
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "buttons": {
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "settings": "Settings",
+    "stats": "Statistics",
+    "aiAnalysis": "AI Analysis",
+    "focus": "Focus Mode",
+    "exit": "Exit"
+  },
+  "settings": {
+    "title": "Settings",
+    "workTime": "Work Time (minutes)",
+    "breakTime": "Break Time (minutes)",
+    "longBreakTime": "Long Break Time (minutes)",
+    "cycleCount": "Cycles before Long Break",
+    "notification": "Enable Notifications",
+    "sound": "Completion Sound",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "stats": {
+    "title": "Statistics",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "pomodoroCount": "Completed Pomodoros",
+    "totalTime": "Total Focus Time",
+    "averagePerDay": "Daily Average",
+    "goal": "Today's Goal",
+    "completed": "Completed",
+    "remaining": "Remaining",
+    "noData": "No data available"
+  },
+  "premium": {
+    "analysis": "AI Productivity Analysis",
+    "watchAd": "Watch Ad",
+    "unlock": "Unlock Premium",
+    "details": "View Detailed Analysis",
+    "insights": "Productivity Insights",
+    "focus": "Focus Score",
+    "consistency": "Consistency",
+    "efficiency": "Efficiency",
+    "recommendation": "Recommendation"
+  },
+  "notifications": {
+    "workComplete": "Work time is over!",
+    "breakComplete": "Break time is over!",
+    "longBreakComplete": "Long break is over!"
+  },
+  "goals": {
+    "title": "Today's Goal",
+    "setGoal": "Set Goal",
+    "targetPomodoros": "Target Pomodoros",
+    "save": "Save",
+    "progress": "Progress"
+  },
+  "messages": {
+    "cycleComplete": "You completed a cycle!",
+    "longBreakTime": "Time for a long break!",
+    "goalReached": "Goal reached! Congratulations!",
+    "offline": "You're offline"
+  }
+}

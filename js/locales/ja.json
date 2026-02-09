@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "ポモドーロタイマー",
+    "subtitle": "集中力を高める生産性ツール"
+  },
+  "timer": {
+    "work": "作業時間",
+    "break": "休憩時間",
+    "longBreak": "長い休憩",
+    "minutes": "分",
+    "seconds": "秒"
+  },
+  "buttons": {
+    "start": "開始",
+    "pause": "一時停止",
+    "resume": "再開",
+    "reset": "リセット",
+    "settings": "設定",
+    "stats": "統計",
+    "aiAnalysis": "AI分析",
+    "focus": "集中モード",
+    "exit": "終了"
+  },
+  "settings": {
+    "title": "設定",
+    "workTime": "作業時間（分）",
+    "breakTime": "休憩時間（分）",
+    "longBreakTime": "長い休憩時間（分）",
+    "cycleCount": "長い休憩までのサイクル数",
+    "notification": "通知を有効にする",
+    "sound": "完了音",
+    "save": "保存",
+    "cancel": "キャンセル"
+  },
+  "stats": {
+    "title": "統計",
+    "today": "今日",
+    "thisWeek": "今週",
+    "pomodoroCount": "完了したポモドーロ",
+    "totalTime": "総集中時間",
+    "averagePerDay": "1日の平均",
+    "goal": "今日の目標",
+    "completed": "完了",
+    "remaining": "残り",
+    "noData": "データがありません"
+  },
+  "premium": {
+    "analysis": "AI生産性分析",
+    "watchAd": "広告を視聴",
+    "unlock": "プレミアムを解除",
+    "details": "詳細分析を表示",
+    "insights": "生産性インサイト",
+    "focus": "集中力スコア",
+    "consistency": "一貫性",
+    "efficiency": "効率",
+    "recommendation": "推奨事項"
+  },
+  "notifications": {
+    "workComplete": "作業時間が終了しました！",
+    "breakComplete": "休憩時間が終了しました！",
+    "longBreakComplete": "長い休憩時間が終了しました！"
+  },
+  "goals": {
+    "title": "今日の目標",
+    "setGoal": "目標を設定",
+    "targetPomodoros": "目標ポモドーロ数",
+    "save": "保存",
+    "progress": "進捗"
+  },
+  "messages": {
+    "cycleComplete": "サイクルを完了しました！",
+    "longBreakTime": "長い休憩の時間です！",
+    "goalReached": "目標に達しました！おめでとうございます！",
+    "offline": "オフライン状態です"
+  }
+}
