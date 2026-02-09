@@ -956,3 +956,14 @@ select:focus-visible {
     color: black;
   }
 }
+
+/* Selection Color */
+::selection {
+    background: #e74c3c;
+    color: white;
+}
+
+::-moz-selection {
+    background: #e74c3c;
+    color: white;
+}
