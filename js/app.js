@@ -47,7 +47,11 @@ class PomodoroTimer {
 
   async init() {
     // i18n 초기화
-    await i18n.initialize();
+    try {
+      await i18n.initialize();
+    } catch (e) {
+      console.warn('i18n init failed:', e);
+    }
 
     // 저장된 데이터 로드
     this.loadData();
