@@ -457,7 +457,17 @@ class PomodoroTimer {
 
 // 앱 시작
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new PomodoroTimer();
+  try {
+    const app = new PomodoroTimer();
+  } catch(e) {
+    console.error('Init error:', e);
+  } finally {
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 300);
+    }
+  }
 });
 
 // 마이크로인터랙션: 버튼 클릭 시 리플 효과
@@ -491,5 +501,24 @@ if (navigator.getBattery) {
     battery.addEventListener('levelchange', () => {
       // 배터리 낮으면 타이머 활동성 조정 가능
     });
+  });
+}
+
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+if (themeToggle) {
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+  }
+  themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+  themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    document.body.classList.toggle('light-mode', next === 'light');
+    localStorage.setItem('theme', next);
+    themeToggle.textContent = next === 'light' ? '🌙' : '☀️';
   });
 }
