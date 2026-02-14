@@ -69,6 +69,7 @@
   <title>Pomodoro Timer - 포모도로 타이머</title>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" data-i18n="accessibility.skipToMain">Skip to main content</a>
   <div class="app-loader" id="app-loader">
       <div class="loader-spinner"></div>
   </div>
@@ -110,7 +111,7 @@
   </header>
 
   <!-- 메인 콘텐츠 -->
-  <main>
+  <main id="main-content">
     <div class="timer-container">
       <!-- 타이머 정보 -->
       <div class="timer-info">
@@ -378,6 +379,7 @@
       });
     });
   </script>
+  <div id="share-float" style="position:fixed;bottom:80px;right:16px;z-index:99"><button onclick="(async()=>{const u=location.href,t=document.title;if(typeof gtag==='function')gtag('event','share',{method:navigator.share?'native':'clipboard',app_name:'pomodoro-timer'});if(navigator.share){try{await navigator.share({title:t,url:u})}catch(e){}}else{await navigator.clipboard.writeText(u);this.textContent='✅';setTimeout(()=>this.textContent='📤',1500)}})()" style="width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:20px;cursor:pointer;backdrop-filter:blur(8px)">📤</button></div>
   <script src="/portal/js/cross-promo.js" defer></script>
 </body>
 </html>
