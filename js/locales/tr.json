@@ -32,6 +32,15 @@
     "save": "Kaydet",
     "cancel": "İptal"
   },
+  "days": {
+    "mon": "Pzt",
+    "tue": "Sal",
+    "wed": "Çar",
+    "thu": "Per",
+    "fri": "Cum",
+    "sat": "Cmt",
+    "sun": "Paz"
+  },
   "stats": {
     "title": "İstatistikler",
     "today": "Bugün",
@@ -42,7 +51,9 @@
     "goal": "Bugünün hedefi",
     "completed": "Tamamlandı",
     "remaining": "Kalan",
-    "noData": "Veri yok"
+    "noData": "Veri yok",
+    "total": "Toplam",
+    "goalTip": "Aylık istatistikler için hedef sayısı belirleyin!"
   },
   "premium": {
     "analysis": "AI üretkenlik analizi",

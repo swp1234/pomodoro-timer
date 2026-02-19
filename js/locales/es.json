@@ -32,6 +32,15 @@
     "save": "Guardar",
     "cancel": "Cancelar"
   },
+  "days": {
+    "mon": "Lun",
+    "tue": "Mar",
+    "wed": "Mié",
+    "thu": "Jue",
+    "fri": "Vie",
+    "sat": "Sáb",
+    "sun": "Dom"
+  },
   "stats": {
     "title": "Estadísticas",
     "today": "Hoy",
@@ -42,7 +51,9 @@
     "goal": "Objetivo de hoy",
     "completed": "Completado",
     "remaining": "Restante",
-    "noData": "Sin datos disponibles"
+    "noData": "Sin datos disponibles",
+    "total": "Total",
+    "goalTip": "Establece un objetivo para gestionar tu ciclo diario de pomodoros."
   },
   "premium": {
     "analysis": "Análisis de productividad IA",

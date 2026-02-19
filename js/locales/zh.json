@@ -32,6 +32,15 @@
     "save": "保存",
     "cancel": "取消"
   },
+  "days": {
+    "mon": "一",
+    "tue": "二",
+    "wed": "三",
+    "thu": "四",
+    "fri": "五",
+    "sat": "六",
+    "sun": "日"
+  },
   "stats": {
     "title": "统计",
     "today": "今天",
@@ -42,7 +51,9 @@
     "goal": "今天的目标",
     "completed": "已完成",
     "remaining": "剩余",
-    "noData": "暂无数据"
+    "noData": "暂无数据",
+    "total": "总计",
+    "goalTip": "设置目标数量即可查看每日番茄周期目标。"
   },
   "premium": {
     "analysis": "AI生产力分析",

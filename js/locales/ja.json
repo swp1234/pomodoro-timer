@@ -32,6 +32,15 @@
     "save": "保存",
     "cancel": "キャンセル"
   },
+  "days": {
+    "mon": "月",
+    "tue": "火",
+    "wed": "水",
+    "thu": "木",
+    "fri": "金",
+    "sat": "土",
+    "sun": "日"
+  },
   "stats": {
     "title": "統計",
     "today": "今日",
@@ -42,7 +51,9 @@
     "goal": "今日の目標",
     "completed": "完了",
     "remaining": "残り",
-    "noData": "データがありません"
+    "noData": "データがありません",
+    "total": "合計",
+    "goalTip": "目標数を設定すると1日のポモドーロサイクル目標を管理できます。"
   },
   "premium": {
     "analysis": "AI生産性分析",

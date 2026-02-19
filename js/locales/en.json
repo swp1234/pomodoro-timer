@@ -32,6 +32,15 @@
     "save": "Save",
     "cancel": "Cancel"
   },
+  "days": {
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun"
+  },
   "stats": {
     "title": "Statistics",
     "today": "Today",
@@ -42,7 +51,9 @@
     "goal": "Today's Goal",
     "completed": "Completed",
     "remaining": "Remaining",
-    "noData": "No data available"
+    "noData": "No data available",
+    "total": "Total",
+    "goalTip": "Set a goal count to track your daily pomodoro cycle target."
   },
   "premium": {
     "analysis": "AI Productivity Analysis",

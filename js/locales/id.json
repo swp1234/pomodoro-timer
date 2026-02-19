@@ -32,6 +32,15 @@
     "save": "Simpan",
     "cancel": "Batal"
   },
+  "days": {
+    "mon": "Sen",
+    "tue": "Sel",
+    "wed": "Rab",
+    "thu": "Kam",
+    "fri": "Jum",
+    "sat": "Sab",
+    "sun": "Min"
+  },
   "stats": {
     "title": "Statistik",
     "today": "Hari ini",
@@ -42,7 +51,9 @@
     "goal": "Target hari ini",
     "completed": "Selesai",
     "remaining": "Tersisa",
-    "noData": "Tidak ada data"
+    "noData": "Tidak ada data",
+    "total": "Total",
+    "goalTip": "Atur jumlah target untuk mengelola siklus pomodoro harian Anda."
   },
   "premium": {
     "analysis": "Analisis produktivitas AI",

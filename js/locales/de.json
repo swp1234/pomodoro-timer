@@ -32,6 +32,15 @@
     "save": "Speichern",
     "cancel": "Abbrechen"
   },
+  "days": {
+    "mon": "Mo",
+    "tue": "Di",
+    "wed": "Mi",
+    "thu": "Do",
+    "fri": "Fr",
+    "sat": "Sa",
+    "sun": "So"
+  },
   "stats": {
     "title": "Statistiken",
     "today": "Heute",
@@ -42,7 +51,9 @@
     "goal": "Heutiges Ziel",
     "completed": "Abgeschlossen",
     "remaining": "Verbleibend",
-    "noData": "Keine Daten verfügbar"
+    "noData": "Keine Daten verfügbar",
+    "total": "Gesamt",
+    "goalTip": "Setze ein Ziel für tägliche Pomodoro-Statistiken!"
   },
   "premium": {
     "analysis": "KI-Produktivitätsanalyse",

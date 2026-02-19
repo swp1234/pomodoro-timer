@@ -32,6 +32,15 @@
     "save": "Enregistrer",
     "cancel": "Annuler"
   },
+  "days": {
+    "mon": "Lun",
+    "tue": "Mar",
+    "wed": "Mer",
+    "thu": "Jeu",
+    "fri": "Ven",
+    "sat": "Sam",
+    "sun": "Dim"
+  },
   "stats": {
     "title": "Statistiques",
     "today": "Aujourd'hui",
@@ -42,7 +51,9 @@
     "goal": "Objectif d'aujourd'hui",
     "completed": "Terminé",
     "remaining": "Restant",
-    "noData": "Aucune donnée"
+    "noData": "Aucune donnée",
+    "total": "Total",
+    "goalTip": "Fixez un objectif pour voir les statistiques de pomodoro mensuelles!"
   },
   "premium": {
     "analysis": "Analyse de productivité IA",

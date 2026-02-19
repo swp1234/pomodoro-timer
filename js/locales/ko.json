@@ -32,6 +32,15 @@
     "save": "저장",
     "cancel": "취소"
   },
+  "days": {
+    "mon": "월",
+    "tue": "화",
+    "wed": "수",
+    "thu": "목",
+    "fri": "금",
+    "sat": "토",
+    "sun": "일"
+  },
   "stats": {
     "title": "통계",
     "today": "오늘",
@@ -42,7 +51,9 @@
     "goal": "오늘의 목표",
     "completed": "완료됨",
     "remaining": "남은 시간",
-    "noData": "데이터가 없습니다"
+    "noData": "데이터가 없습니다",
+    "total": "종합",
+    "goalTip": "목표 개수를 설정하면 하루 동안 달성해야 할 포모도로 사이클 수를 정할 수 있습니다."
   },
   "premium": {
     "analysis": "AI 생산성 분석",
