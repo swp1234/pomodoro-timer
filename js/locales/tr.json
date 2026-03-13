@@ -83,5 +83,12 @@
     "longBreakTime": "Uzun mola zamanı!",
     "goalReached": "Hedef başarıldı! Tebrikler!",
     "offline": "Çevrimdışısınız"
+  },
+  "related": {
+    "title": "Daha fazla keşfet",
+    "todoList": "Yapılacaklar",
+    "routinePlanner": "Rutin Planlayıcı",
+    "habitTracker": "Alışkanlık Takibi",
+    "detoxTimer": "Detoks Zamanlayıcı"
   }
 }

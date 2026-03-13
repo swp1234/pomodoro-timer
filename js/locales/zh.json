@@ -83,5 +83,12 @@
     "longBreakTime": "是时候长休息了！",
     "goalReached": "目标达成！祝贺您！",
     "offline": "您处于离线状态"
+  },
+  "related": {
+    "title": "探索更多",
+    "todoList": "待办清单",
+    "routinePlanner": "日程规划",
+    "habitTracker": "习惯追踪",
+    "detoxTimer": "数字排毒"
   }
 }

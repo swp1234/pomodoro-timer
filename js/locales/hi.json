@@ -83,5 +83,12 @@
     "longBreakTime": "लंबे विश्राम का समय है!",
     "goalReached": "लक्ष्य प्राप्त! बधाई हो!",
     "offline": "आप ऑफलाइन हैं"
+  },
+  "related": {
+    "title": "और खोजें",
+    "todoList": "कार्य सूची",
+    "routinePlanner": "दिनचर्या योजक",
+    "habitTracker": "आदत ट्रैकर",
+    "detoxTimer": "डिटॉक्स टाइमर"
   }
 }

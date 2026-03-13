@@ -83,5 +83,12 @@
     "longBreakTime": "Saatnya istirahat panjang!",
     "goalReached": "Target tercapai! Selamat!",
     "offline": "Anda sedang offline"
+  },
+  "related": {
+    "title": "Jelajahi lainnya",
+    "todoList": "Daftar Tugas",
+    "routinePlanner": "Perencana Rutinitas",
+    "habitTracker": "Pelacak Kebiasaan",
+    "detoxTimer": "Timer Detoks"
   }
 }

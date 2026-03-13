@@ -83,5 +83,12 @@
     "longBreakTime": "É hora de uma pausa longa!",
     "goalReached": "Meta alcançada! Parabéns!",
     "offline": "Você está offline"
+  },
+  "related": {
+    "title": "Explore mais",
+    "todoList": "Lista de tarefas",
+    "routinePlanner": "Planejador de rotina",
+    "habitTracker": "Rastreador de hábitos",
+    "detoxTimer": "Timer de desintoxicação"
   }
 }

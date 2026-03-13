@@ -83,5 +83,12 @@
     "longBreakTime": "긴 휴식 시간입니다!",
     "goalReached": "목표를 달성했습니다! 축하합니다!",
     "offline": "오프라인 상태입니다"
+  },
+  "related": {
+    "title": "더 많은 콘텐츠",
+    "todoList": "할 일 목록",
+    "routinePlanner": "루틴 플래너",
+    "habitTracker": "습관 트래커",
+    "detoxTimer": "디톡스 타이머"
   }
 }

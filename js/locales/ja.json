@@ -83,5 +83,12 @@
     "longBreakTime": "長い休憩の時間です！",
     "goalReached": "目標に達しました！おめでとうございます！",
     "offline": "オフライン状態です"
+  },
+  "related": {
+    "title": "もっと楽しむ",
+    "todoList": "ToDoリスト",
+    "routinePlanner": "ルーティンプランナー",
+    "habitTracker": "習慣トラッカー",
+    "detoxTimer": "デトックスタイマー"
   }
 }
