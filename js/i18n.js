@@ -3,10 +3,19 @@ class I18n {
     this.translations = {};
     this.supportedLanguages = ['ko', 'en', 'ja', 'zh', 'es', 'pt', 'id', 'tr', 'de', 'fr', 'hi', 'ru'];
     this.currentLang = this.detectLanguage();
+    document.documentElement.lang = this.currentLang;
     this.initialized = false;
   }
 
   detectLanguage() {
+    try {
+      const params = new URLSearchParams(window.location.search || '');
+      const urlLang = params.get('lang');
+      if (urlLang && this.supportedLanguages.includes(urlLang)) {
+        return urlLang;
+      }
+    } catch (error) {}
+
     // localStorage에서 저장된 언어 확인
     const saved = localStorage.getItem('appLanguage');
     if (saved && this.supportedLanguages.includes(saved)) {
@@ -25,7 +34,7 @@ class I18n {
 
   async loadTranslations(lang) {
     try {
-      const response = await fetch(`/js/locales/${lang}.json`);
+      const response = await fetch(`js/locales/${lang}.json`);
       if (!response.ok) throw new Error(`Failed to load ${lang}`);
       const data = await response.json();
       this.translations = data;
@@ -65,6 +74,7 @@ class I18n {
     if (success) {
       this.currentLang = lang;
       localStorage.setItem('appLanguage', lang);
+      document.documentElement.lang = lang;
       this.updateUI();
       return true;
     }
