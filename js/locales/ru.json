@@ -89,6 +89,9 @@
     "todoList": "Список дел",
     "routinePlanner": "Планировщик",
     "habitTracker": "Трекер привычек",
-    "detoxTimer": "Детокс-таймер"
+    "detoxTimer": "Детокс-таймер",
+    "stressCheck": "Тест на стресс",
+    "ddayCounter": "Счётчик дней",
+    "workStyle": "Рабочий стиль"
   }
 }

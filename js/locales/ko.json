@@ -89,6 +89,9 @@
     "todoList": "할 일 목록",
     "routinePlanner": "루틴 플래너",
     "habitTracker": "습관 트래커",
-    "detoxTimer": "디톡스 타이머"
+    "detoxTimer": "디톡스 타이머",
+    "stressCheck": "스트레스 체크",
+    "ddayCounter": "D-Day 카운터",
+    "workStyle": "업무 스타일 테스트"
   }
 }

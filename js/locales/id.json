@@ -89,6 +89,9 @@
     "todoList": "Daftar Tugas",
     "routinePlanner": "Perencana Rutinitas",
     "habitTracker": "Pelacak Kebiasaan",
-    "detoxTimer": "Timer Detoks"
+    "detoxTimer": "Timer Detoks",
+    "stressCheck": "Cek Stres",
+    "ddayCounter": "Penghitung D-Day",
+    "workStyle": "Gaya Kerja"
   }
 }

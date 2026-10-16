@@ -89,6 +89,9 @@
     "todoList": "Todo List",
     "routinePlanner": "Routine Planner",
     "habitTracker": "Habit Tracker",
-    "detoxTimer": "Detox Timer"
+    "detoxTimer": "Detox Timer",
+    "stressCheck": "Stress Check",
+    "ddayCounter": "D-Day Counter",
+    "workStyle": "Work Style"
   }
 }

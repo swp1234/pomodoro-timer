@@ -89,6 +89,9 @@
     "todoList": "待办清单",
     "routinePlanner": "日程规划",
     "habitTracker": "习惯追踪",
-    "detoxTimer": "数字排毒"
+    "detoxTimer": "数字排毒",
+    "stressCheck": "压力检测",
+    "ddayCounter": "倒数日计算器",
+    "workStyle": "工作风格测试"
   }
 }

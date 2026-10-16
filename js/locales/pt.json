@@ -89,6 +89,9 @@
     "todoList": "Lista de tarefas",
     "routinePlanner": "Planejador de rotina",
     "habitTracker": "Rastreador de hábitos",
-    "detoxTimer": "Timer de desintoxicação"
+    "detoxTimer": "Timer de desintoxicação",
+    "stressCheck": "Teste de Estresse",
+    "ddayCounter": "Contador D-Day",
+    "workStyle": "Estilo de Trabalho"
   }
 }
