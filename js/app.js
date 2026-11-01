@@ -444,6 +444,7 @@ class PomodoroTimer {
   }
 
   updateLangMenu() {
+    preserveLanguageLinks();
     const currentLang = i18n.getCurrentLanguage();
     document.querySelectorAll('.lang-option').forEach(btn => {
       if (btn.dataset.lang === currentLang) {
@@ -459,6 +460,7 @@ class PomodoroTimer {
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const app = new PomodoroTimer();
+    preserveLanguageLinks();
   } catch(e) {
     console.error('Init error:', e);
   } finally {
@@ -469,6 +471,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+function preserveLanguageLinks() {
+  try {
+    const lang = (window.i18n && typeof window.i18n.getCurrentLanguage === 'function' ? window.i18n.getCurrentLanguage() : null) || new URLSearchParams(window.location.search).get('lang') || 'ko';
+    document.querySelectorAll('.related-card, a[href^="/stress-check/"], a[href^="/dday-counter/"], a[href^="/work-style/"], a[href^="/detox-timer/"]').forEach(function(a) {
+      const href = a.getAttribute('href');
+      if (!href || href.startsWith('/portal/')) return;
+      const url = new URL(href, window.location.origin);
+      if (lang) {
+        url.searchParams.set('lang', lang);
+      }
+      url.searchParams.set('source', 'pomodoro_timer_result');
+      a.setAttribute('href', url.pathname + url.search + url.hash);
+
+      if (!a.__ctaBound) {
+        a.__ctaBound = true;
+        a.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'content_cta_click', {
+              cta_surface: 'related_tools',
+              destination: a.getAttribute('href'),
+              source: 'pomodoro_timer_result',
+              lang: lang || 'ko'
+            });
+          }
+        });
+      }
+    });
+  } catch (e) {}
+}
 
 // 마이크로인터랙션: 버튼 클릭 시 리플 효과
 document.addEventListener('click', (e) => {
