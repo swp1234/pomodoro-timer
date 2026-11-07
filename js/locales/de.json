@@ -56,15 +56,14 @@
     "goalTip": "Setze ein Ziel für tägliche Pomodoro-Statistiken!"
   },
   "premium": {
-    "analysis": "KI-Produktivitätsanalyse",
-    "watchAd": "Anzeige ansehen",
+    "analysis": "Session Insights",
     "unlock": "Premium freischalten",
     "details": "Detaillierte Analyse anzeigen",
     "insights": "Produktivitätserkenntnisse",
     "focus": "Fokus-Score",
     "consistency": "Konsistenz",
     "efficiency": "Effizienz",
-    "recommendation": "Empfehlung"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Arbeitszeit beendet!",
@@ -93,5 +92,28 @@
     "stressCheck": "Stress-Check",
     "ddayCounter": "D-Day-Zähler",
     "workStyle": "Arbeitsstil-Test"
+  },
+  "about": {
+    "summaryTitle": "Pomodoro-Produktivitätsleitfaden: Ultradiane Rhythmen & FAQ",
+    "methodDesc": "Die Pomodoro-Technik von Francesco Cirillo strukturiert geistige Arbeit in 25-Minuten-Fokusphasen und 5-Minuten-Erholungspausen.",
+    "boundary": "Produktivitätshinweis: Dieser Timer fördert nachhaltiges Arbeiten. Passen Sie die Zeitfenster an Ihren Arbeitsrhythmus an.",
+    "benefitsHeading": "Kernprinzipien des Strukturierten Fokus",
+    "rule25": "25-Minuten-Fokusblock:",
+    "desc25": "Volle Konzentration auf eine Aufgabe ohne Benachrichtigungen.",
+    "rule5": "5-Minuten-Gehirnpause:",
+    "desc5": "Bildschirmfreie Erholung zur Schonung kognitiver Ressourcen.",
+    "rule4Cycles": "Lange Pause nach 4 Runden:",
+    "desc4Cycles": "15 bis 30 Minuten tiefe Erholung zur Vorbeugung von mentaler Ermüdung.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Q: Warum gelten 25 Minuten als Ideal?",
+    "faq1A": "A: Es senkt die Aufschiebe-Schwelle und hält die Aufmerksamkeit vor dem Leistungsabfall auf Spitzenwerten.",
+    "faq2Q": "Q: Was bewirken die Pausen neurobiologisch?",
+    "faq2A": "A: Sie synchronisieren den mentalen Fokus mit ultradianen Biorhythmen und schützen vor geistiger Erschöpfung.",
+    "faq3Q": "Q: Sind die Zeiten konfigurierbar?",
+    "faq3A": "A: Ja, Sie können Arbeits- und Pausenzeiten in den Einstellungen individuell festlegen.",
+    "faq4Q": "Q: Werden meine Sitzungsdaten übermittelt?",
+    "faq4A": "A: Niemals. Sämtliche Verlaufsdaten verbleiben ausschließlich lokal in Ihrem Browser.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Produktivitätsteam"
   }
 }

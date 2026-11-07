@@ -56,15 +56,14 @@
     "goalTip": "Atur jumlah target untuk mengelola siklus pomodoro harian Anda."
   },
   "premium": {
-    "analysis": "Analisis produktivitas AI",
-    "watchAd": "Tonton iklan",
+    "analysis": "Session Insights",
     "unlock": "Buka premium",
     "details": "Lihat analisis detail",
     "insights": "Wawasan produktivitas",
     "focus": "Skor fokus",
     "consistency": "Konsistensi",
     "efficiency": "Efisiensi",
-    "recommendation": "Rekomendasi"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Waktu kerja telah berakhir!",
@@ -93,5 +92,28 @@
     "stressCheck": "Cek Stres",
     "ddayCounter": "Penghitung D-Day",
     "workStyle": "Gaya Kerja"
+  },
+  "about": {
+    "summaryTitle": "Panduan Sains Pomodoro: Ritme Ultradian & FAQ",
+    "methodDesc": "Teknik Pomodoro rancangan Francesco Cirillo membagi alur kerja ke dalam 25 menit fokus penuh dan 5 menit jeda istirahat kognitif.",
+    "boundary": "Catatan Produktivitas: Alat ini mendukung ritme kerja sehat dan fokus berkesinambungan. Sesuaikan durasi dengan energi harian Anda.",
+    "benefitsHeading": "Tiga Prinsip Utama Pomodoro",
+    "rule25": "25 Menit Fokus Penuh:",
+    "desc25": "Konsentrasi tunggal tanpa distraksi gawai atau multitasking.",
+    "rule5": "5 Menit Istirahat Otak:",
+    "desc5": "Menjauh dari layar untuk menyegarkan kembali fokus korteks prefrontal.",
+    "rule4Cycles": "Istirahat Panjang Tiap 4 Siklus:",
+    "desc4Cycles": "Jeda 15–30 menit setelah 4 sesi untuk memulihkan kapasitas kognitif.",
+    "faqTitle": "Pertanyaan Umum (FAQ)",
+    "faq1Q": "Q: Mengapa 25 menit menjadi standar waktu?",
+    "faq1A": "A: Durasi ini efektif mengatasi godaan menunda tugas tanpa membuat otak kelelahan.",
+    "faq2Q": "Q: Apa hubungan jeda waktu dengan ritme tubuh?",
+    "faq2A": "A: Mengikuti fluktuasi alami siklus ultradian otak agar stamina kerja tetap stabil sepanjang hari.",
+    "faq3Q": "Q: Bisakah durasi sesi diubah sesuai kebutuhan?",
+    "faq3A": "A: Tentu. Masuk ke menu Pengaturan untuk mengatur lama kerja dan waktu istirahat.",
+    "faq4Q": "Q: Apakah data sesi saya disimpan secara privat?",
+    "faq4A": "A: Selalu. Seluruh riwayat sesi tersimpan 100% lokal di memori peramban Anda.",
+    "reviewDate": "Tinjauan Redaksi: November 2026",
+    "reviewTeam": "Tim Produktivitas Kognitif DopaBrain"
   }
 }

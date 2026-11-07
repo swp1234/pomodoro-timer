@@ -56,15 +56,14 @@
     "goalTip": "Defina uma meta para acompanhar seu ciclo diário de pomodoros."
   },
   "premium": {
-    "analysis": "Análise de produtividade IA",
-    "watchAd": "Assistir anúncio",
+    "analysis": "Session Insights",
     "unlock": "Desbloquear premium",
     "details": "Ver análise detalhada",
     "insights": "Insights de produtividade",
     "focus": "Pontuação de foco",
     "consistency": "Consistência",
     "efficiency": "Eficiência",
-    "recommendation": "Recomendação"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Tempo de trabalho encerrado!",
@@ -93,5 +92,28 @@
     "stressCheck": "Teste de Estresse",
     "ddayCounter": "Contador D-Day",
     "workStyle": "Estilo de Trabalho"
+  },
+  "about": {
+    "summaryTitle": "Guia de Produtividade Pomodoro: Ritmos Ultradianos & FAQ",
+    "methodDesc": "A Técnica Pomodoro de Francesco Cirillo organiza o foco em ciclos de 25 minutos de trabalho dedicados e 5 minutos de descanso.",
+    "boundary": "Nota de Produtividade: Este timer visa incentivar um ritmo de trabalho sustentável. Ajuste os ciclos conforme sua necessidade.",
+    "benefitsHeading": "Pilares do Foco Estruturado",
+    "rule25": "Sprint de 25 Minutos:",
+    "desc25": "Foco exclusivo em uma única prioridade sem interrupções.",
+    "rule5": "Pausa Cerebral de 5 Minutos:",
+    "desc5": "Distanciamento de telas para reposição de energia no córtex pré-frontal.",
+    "rule4Cycles": "Pausa Longa a Cada 4 Ciclos:",
+    "desc4Cycles": "Descanso profundo de 15 a 30 minutos para evitar a sobrecarga mental.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Q: Por que 25 minutos é a duração padrão?",
+    "faq1A": "A: É o tempo perfeito para driblar a procrastinação mantendo o fluxo mental sem esgotamento.",
+    "faq2Q": "Q: Como as pausas se alinham aos ritmos biológicos?",
+    "faq2A": "A: Respeitam o ciclo ultradiano do cérebro, prevenindo a fadiga de decisão e desatenção.",
+    "faq3Q": "Q: Posso alterar o tempo de foco?",
+    "faq3A": "A: Sim, você pode configurar durações personalizadas na tela de Configurações.",
+    "faq4Q": "Q: Meus dados de produtividade são enviados a servidores?",
+    "faq4A": "A: Nunca. Todo o histórico fica armazenado exclusivamente no seu navegador.",
+    "reviewDate": "Revisão Editorial: Novembro 2026",
+    "reviewTeam": "Equipe de Performance Cognitiva DopaBrain"
   }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="description" content="Boost focus and productivity with the free Pomodoro Timer. Customizable work/break intervals, session tracking, and calming sounds. Try free!">
-    <meta name="dateModified" content="2026-10-24">
+    <meta name="dateModified" content="2026-11-07">
   <meta name="theme-color" content="#0f0f23">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -106,6 +106,47 @@
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
   <title>Pomodoro Timer - Free Focus & Productivity Tool | DopaBrain</title>
+    <!-- Schema.org - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Pomodoro Technique and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Developed by Francesco Cirillo in the late 1980s, the Pomodoro Technique is a time-management methodology that divides work into 25-minute focused intervals (called 'pomodoros') separated by short 5-minute rest breaks. After completing four consecutive cycles, you take an extended 15-to-30-minute restorative break."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cognitive and neuroscientific science behind 25-minute intervals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The human prefrontal cortex relies on finite dopamine and glucose reserves to maintain continuous selective attention. Working in 25-minute sprints aligns with human ultradian rhythm harmonics (the Basic Rest-Activity Cycle or BRAC identified by physiologist Nathaniel Kleitman), preventing cognitive fatigue, decision fatigue, and attention drift."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize interval durations for deep work or study?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. While the standard 25/5 rhythm is ideal for daily task execution, many people adapt the timer to 50 minutes of deep focus followed by a 10-minute break for complex coding, academic writing, or creative design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my session history or task data tracked or stored on external servers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. All session tracking, daily goal tallies, and productivity statistics are stored 100% locally on your device in your browser's local storage. DopaBrain does not transmit, log, or share your productivity habits with remote servers."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Pomodoro Timer - Free Focus &amp; Productivity Tool</h1>
@@ -283,9 +324,9 @@
           <div class="premium-description" data-i18n="premium.recommendation">
             광고를 시청하고 AI 기반 생산성 분석을 확인하세요
           </div>
-          <button class="btn-premium" id="ai-analysis-btn" data-i18n="premium.watchAd">광고 시청하기</button>
+          
 
-          <div class="analysis-results" id="analysis-results">
+          <div class="analysis-results active" id="analysis-results">
             <div class="analysis-item">
               <div class="analysis-label" data-i18n="premium.focus">집중력</div>
               <div class="analysis-score" id="focus-score">85</div>
@@ -388,19 +429,7 @@
         document.getElementById('goal-modal').classList.add('active');
       });
 
-      // AI 분석 버튼
-      document.getElementById('ai-analysis-btn')?.addEventListener('click', () => {
-        const resultsContainer = document.getElementById('analysis-results');
-        if (resultsContainer.classList.contains('active')) {
-          resultsContainer.classList.remove('active');
-        } else {
-          // 광고 시청 시뮬레이션
-          alert('광고 재생 중입니다. 30초 후 분석 결과가 표시됩니다.');
-          setTimeout(() => {
-            resultsContainer.classList.add('active');
-          }, 2000);
-        }
-      });
+      // Analysis results are available immediately
 
       // 모달 외부 클릭 시 닫기
       document.querySelectorAll('.modal').forEach(modal => {
@@ -427,6 +456,49 @@
       });
     }
   </script>
+    
+    <!-- Scientific Productivity Guide & FAQ Section -->
+    <section class="about-section" style="max-width:420px;margin:24px auto 16px;padding:0 12px;box-sizing:border-box;">
+      <details class="about-test faq-accordion" open style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;text-align:left;">
+        <summary data-i18n="about.summaryTitle" style="min-height:48px;padding:14px 18px;color:#00b894;cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;touch-action:manipulation;">About the Pomodoro Technique: Science, Ultradian Cycles & FAQ</summary>
+        <div class="about-content faq-content" style="padding:0 18px 20px;box-sizing:border-box;">
+          <p data-i18n="about.methodDesc" style="font-size:13px;line-height:1.7;color:#cbd5e1;margin:0 0 12px;">The Pomodoro Technique is an evidence-backed time-management method created by Francesco Cirillo. It organizes focused effort into structured 25-minute work sprints separated by 5-minute cognitive rest intervals.</p>
+          <p class="about-note" data-i18n="about.boundary" style="font-size:12px;font-style:italic;color:#94a3b8;border-left:3px solid #00b894;padding-left:10px;margin:12px 0 16px;line-height:1.6;">Productivity Note: This timer is an educational tool designed to support cognitive pacing and sustainable focus. Adapt session intervals to fit your personal workflow and energy levels.</p>
+
+          <h3 class="about-heading" data-i18n="about.benefitsHeading" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #00b894;padding-left:8px;">Core Principles of Structured Focus</h3>
+          <ul class="about-list" style="list-style:none;padding:0;margin:0 0 16px;">
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.rule25">25-Minute Work Sprint:</strong> <span data-i18n="about.desc25">Singular focus on a single task without multitasking or notification interruptions.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.rule5">5-Minute Brain Rest:</strong> <span data-i18n="about.desc5">Step away from screens, stretch, and allow dopamine reserves in the prefrontal cortex to replenish.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.rule4Cycles">4 Cycles & Long Break:</strong> <span data-i18n="about.desc4Cycles">After 4 consecutive pomodoros, take a 15–30 minute break to reset executive attention.</span></li>
+          </ul>
+
+          <h3 class="about-heading faq-heading" data-i18n="about.faqTitle" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #00b894;padding-left:8px;">Frequently Asked Questions</h3>
+          <div class="faq-section" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq1Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Why is 25 minutes the standard Pomodoro length?</strong>
+              <p class="about-faq-a" data-i18n="about.faq1A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: 25 minutes is brief enough to resist procrastination and distractions while providing enough sustained time to reach a state of productive flow.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq2Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: How do ultradian rhythms relate to periodic breaks?</strong>
+              <p class="about-faq-a" data-i18n="about.faq2A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Nathaniel Kleitman's Basic Rest-Activity Cycle (BRAC) shows human energy naturally fluctuates. Scheduled micro-breaks align with these neurological peaks and valleys.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq3Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Can I adjust interval times in settings?</strong>
+              <p class="about-faq-a" data-i18n="about.faq3A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Yes. Use the Settings icon to configure custom work durations, short break times, and long break intervals according to your study or work demands.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq4Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Is my productivity data saved privately?</strong>
+              <p class="about-faq-a" data-i18n="about.faq4A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Always. All session counts, daily streaks, and custom settings remain 100% on your device in local storage. No tracking data is sent to external servers.</p>
+            </div>
+          </div>
+
+          <div class="about-review-meta" style="font-size:11px;color:#64748b;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08);">
+            <span data-i18n="about.reviewDate">Editorial Review: November 2026</span> • <span data-i18n="about.reviewTeam">DopaBrain Cognitive Performance Team</span>
+          </div>
+        </div>
+      </details>
+    </section>
+
     <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
       <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>
       <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;">

@@ -56,15 +56,14 @@
     "goalTip": "设置目标数量即可查看每日番茄周期目标。"
   },
   "premium": {
-    "analysis": "AI生产力分析",
-    "watchAd": "观看广告",
+    "analysis": "Session Insights",
     "unlock": "解锁高级功能",
     "details": "查看详细分析",
     "insights": "生产力洞察",
     "focus": "专注力评分",
     "consistency": "持续性",
     "efficiency": "效率",
-    "recommendation": "建议"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "工作时间结束！",
@@ -93,5 +92,28 @@
     "stressCheck": "压力检测",
     "ddayCounter": "倒数日计算器",
     "workStyle": "工作风格测试"
+  },
+  "about": {
+    "summaryTitle": "番茄工作法科学指南：超昼夜节律与FAQ",
+    "methodDesc": "番茄工作法由弗朗切斯科·齐里洛创立，是一种将工作切分为25分钟专注与5分钟短暂休息的高效时间管理法则。",
+    "boundary": "效率说明：本计时器旨在帮助建立平稳、可持续的专注节奏，请根据个人生理状态灵活调整。",
+    "benefitsHeading": "番茄专注三大核心法则",
+    "rule25": "25分钟单点专注:",
+    "desc25": "杜绝多任务切换与外部干扰，全力攻克单一目标。",
+    "rule5": "5分钟大脑重置:",
+    "desc5": "离开屏幕轻微活动，帮助前额叶多巴胺储备恢复。",
+    "rule4Cycles": "4轮后的大休息:",
+    "desc4Cycles": "每完成4个番茄钟，享受15-30分钟深度休息以防止认知耗竭。",
+    "faqTitle": "常见问题解答 (FAQ)",
+    "faq1Q": "Q: 为什么将25分钟作为标准时长？",
+    "faq1A": "A: 该时长能有效降低对困难任务的拖延阻抗，同时刚好在注意力分散临界点前完成一个专注周期。",
+    "faq2Q": "Q: 超昼夜节律与定时休息有何生理学关联？",
+    "faq2A": "A: 神经生理学家克莱特曼提出的基本休息-活动周期（BRAC）表明，定时微休息能避免神经元过度疲劳。",
+    "faq3Q": "Q: 可以自定义工作与休息时长吗？",
+    "faq3A": "A: 当然可以。您可以在设置面板自由调整个性化的专注时长与休息长短。",
+    "faq4Q": "Q: 我的打卡统计数据会被上传吗？",
+    "faq4A": "A: 绝不。所有专注记录均仅保存在您本地浏览器的储存空间中。",
+    "reviewDate": "内容审阅：2026年11月",
+    "reviewTeam": "DopaBrain 认知生产力团队"
   }
 }

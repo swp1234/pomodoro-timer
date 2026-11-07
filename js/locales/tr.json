@@ -56,15 +56,14 @@
     "goalTip": "Aylık istatistikler için hedef sayısı belirleyin!"
   },
   "premium": {
-    "analysis": "AI üretkenlik analizi",
-    "watchAd": "Reklam izle",
+    "analysis": "Session Insights",
     "unlock": "Premium'u aç",
     "details": "Detaylı analizi görüntüle",
     "insights": "Üretkenlik İçgörüleri",
     "focus": "Odak puanı",
     "consistency": "Tutarlılık",
     "efficiency": "Verimlilik",
-    "recommendation": "Tavsiye"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Çalışma zamanı bitti!",
@@ -93,5 +92,28 @@
     "stressCheck": "Stres Kontrolü",
     "ddayCounter": "Gün Sayacı (D-Day)",
     "workStyle": "Çalışma Stili"
+  },
+  "about": {
+    "summaryTitle": "Pomodoro Odaklanma Rehberi: Ultradyan Ritimler & SSS",
+    "methodDesc": "Francesco Cirillo tarafından geliştirilen Pomodoro Tekniği, 25 dakikalık yüksek odaklanma ile 5 dakikalık zihinsel molaları dengeler.",
+    "boundary": "Verimlilik Notu: Bu zamanlayıcı sürdürülebilir zihinsel tempoyu destekler. Aralıkları kişisel çalışma tarzınıza göre uyarlayın.",
+    "benefitsHeading": "Yapılandırılmış Odaklanmanın İlkeleri",
+    "rule25": "25 Dakikalık Odak Sprinti:",
+    "desc25": "Bildirimlerden uzak, tek bir göreve adanmış kesintisiz dikkat.",
+    "rule5": "5 Dakikalık Zihin Molası:",
+    "desc5": "Ekranlardan uzaklaşarak prefrontal korteks enerjisini yenileme.",
+    "rule4Cycles": "4 Döngü Sonrası Uzun Mola:",
+    "desc4Cycles": "Bilişsel tükenmeyi önlemek için her 4 pomodoro sonrası 15–30 dakika mola.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Q: Neden 25 dakika standarttır?",
+    "faq1A": "A: Erteleme eğilimini kırmak ve dikkat dağılmadan akış (flow) durumuna girmek için ideal süredir.",
+    "faq2Q": "Q: Düzenli molalar beyni nasıl korur?",
+    "faq2A": "A: Bilişsel döngülerle uyumlanarak karar yorgunluğunu ve dikkat dağınıklığını önler.",
+    "faq3Q": "Q: Süreleri kendime göre değiştirebilir miyim?",
+    "faq3A": "A: Evet. Ayarlar panelinden çalışma ve mola sürelerini özgürce ayarlayabilirsiniz.",
+    "faq4Q": "Q: Çalışma verilerim kaydediliyor mu?",
+    "faq4A": "A: Asla. Tüm oturum bilgileri tamamen tarayıcınızın yerel depolamasında tutulur.",
+    "reviewDate": "Editöryal İnceleme: Kasım 2026",
+    "reviewTeam": "DopaBrain Bilişsel Performans Ekibi"
   }
 }

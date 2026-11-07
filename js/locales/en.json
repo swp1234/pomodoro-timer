@@ -56,15 +56,14 @@
     "goalTip": "Set a goal count to track your daily pomodoro cycle target."
   },
   "premium": {
-    "analysis": "AI Productivity Analysis",
-    "watchAd": "Watch Ad",
+    "analysis": "Session Insights",
     "unlock": "Unlock Premium",
     "details": "View Detailed Analysis",
     "insights": "Productivity Insights",
     "focus": "Focus Score",
     "consistency": "Consistency",
     "efficiency": "Efficiency",
-    "recommendation": "Recommendation"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Work time is over!",
@@ -93,5 +92,28 @@
     "stressCheck": "Stress Check",
     "ddayCounter": "D-Day Counter",
     "workStyle": "Work Style"
+  },
+  "about": {
+    "summaryTitle": "About the Pomodoro Technique: Science, Ultradian Cycles & FAQ",
+    "methodDesc": "The Pomodoro Technique is an evidence-backed time-management method created by Francesco Cirillo. It organizes focused effort into structured 25-minute work sprints separated by 5-minute cognitive rest intervals.",
+    "boundary": "Productivity Note: This timer is an educational tool designed to support cognitive pacing and sustainable focus. Adapt session intervals to fit your personal workflow and energy levels.",
+    "benefitsHeading": "Core Principles of Structured Focus",
+    "rule25": "25-Minute Work Sprint:",
+    "desc25": "Singular focus on a single task without multitasking or notification interruptions.",
+    "rule5": "5-Minute Brain Rest:",
+    "desc5": "Step away from screens, stretch, and allow dopamine reserves in the prefrontal cortex to replenish.",
+    "rule4Cycles": "4 Cycles & Long Break:",
+    "desc4Cycles": "After 4 consecutive pomodoros, take a 15–30 minute break to reset executive attention.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Q: Why is 25 minutes the standard Pomodoro length?",
+    "faq1A": "A: 25 minutes is brief enough to resist procrastination and distractions while providing enough sustained time to reach a state of productive flow.",
+    "faq2Q": "Q: How do ultradian rhythms relate to periodic breaks?",
+    "faq2A": "A: Nathaniel Kleitman's Basic Rest-Activity Cycle (BRAC) shows human energy naturally fluctuates. Scheduled micro-breaks align with these neurological peaks and valleys.",
+    "faq3Q": "Q: Can I adjust interval times in settings?",
+    "faq3A": "A: Yes. Use the Settings icon to configure custom work durations, short break times, and long break intervals according to your study or work demands.",
+    "faq4Q": "Q: Is my productivity data saved privately?",
+    "faq4A": "A: Always. All session counts, daily streaks, and custom settings remain 100% on your device in local storage. No tracking data is sent to external servers.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Cognitive Performance Team"
   }
 }

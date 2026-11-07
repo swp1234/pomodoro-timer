@@ -56,15 +56,14 @@
     "goalTip": "Establece un objetivo para gestionar tu ciclo diario de pomodoros."
   },
   "premium": {
-    "analysis": "Análisis de productividad IA",
-    "watchAd": "Ver anuncio",
+    "analysis": "Session Insights",
     "unlock": "Desbloquear premium",
     "details": "Ver análisis detallado",
     "insights": "Perspectivas de productividad",
     "focus": "Puntuación de enfoque",
     "consistency": "Consistencia",
     "efficiency": "Eficiencia",
-    "recommendation": "Recomendación"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "¡Se acabó el tiempo de trabajo!",
@@ -93,5 +92,28 @@
     "stressCheck": "Test de Estrés",
     "ddayCounter": "Contador D-Day",
     "workStyle": "Estilo de Trabajo"
+  },
+  "about": {
+    "summaryTitle": "Guía de Productividad Pomodoro: Ritmos Ultradianos y FAQ",
+    "methodDesc": "La Técnica Pomodoro es un método de gestión del tiempo creado por Francesco Cirillo, que alterna 25 minutos de enfoque con 5 minutos de descanso.",
+    "boundary": "Nota de Productividad: Esta herramienta apoya un ritmo de trabajo sostenible y saludable. Ajuste los intervalos según su flujo individual.",
+    "benefitsHeading": "Principios Clave del Enfoque Pomodoro",
+    "rule25": "Sprint de 25 Minutos:",
+    "desc25": "Atención total en una única tarea sin interrupciones.",
+    "rule5": "Pausa Cerebral de 5 Minutos:",
+    "desc5": "Desconexión de pantallas para permitir la recarga dopaminérgica.",
+    "rule4Cycles": "Pausa Larga cada 4 Ciclos:",
+    "desc4Cycles": "Un descanso reparador de 15 a 30 minutos para prevenir la fatiga mental.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "Q: ¿Por qué 25 minutos es el estándar?",
+    "faq1A": "A: Es la duración ideal para superar la procrastinación inicial sin agotar los recursos de atención ejecutiva.",
+    "faq2Q": "Q: ¿Cómo ayudan las pausas a nivel neurocientífico?",
+    "faq2A": "A: Se alinean con los ciclos ultradianos corporales, renovando la capacidad analítica y la memoria de trabajo.",
+    "faq3Q": "Q: ¿Puedo personalizar los tiempos?",
+    "faq3A": "A: Sí. Puede adaptar los minutos de trabajo y descanso desde el menú de Ajustes.",
+    "faq4Q": "Q: ¿Se almacenan mis estadísticas de sesión?",
+    "faq4A": "A: Jamás. Todos los datos permanecen 100% locales en su navegador.",
+    "reviewDate": "Revisión Editorial: Noviembre 2026",
+    "reviewTeam": "Equipo de Rendimiento Cognitivo DopaBrain"
   }
 }

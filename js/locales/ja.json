@@ -56,15 +56,14 @@
     "goalTip": "目標数を設定すると1日のポモドーロサイクル目標を管理できます。"
   },
   "premium": {
-    "analysis": "AI生産性分析",
-    "watchAd": "広告を視聴",
+    "analysis": "Session Insights",
     "unlock": "プレミアムを解除",
     "details": "詳細分析を表示",
     "insights": "生産性インサイト",
     "focus": "集中力スコア",
     "consistency": "一貫性",
     "efficiency": "効率",
-    "recommendation": "推奨事項"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "作業時間が終了しました！",
@@ -93,5 +92,28 @@
     "stressCheck": "ストレスチェック",
     "ddayCounter": "D-Dayカウンター",
     "workStyle": "仕事スタイル診断"
+  },
+  "about": {
+    "summaryTitle": "ポモドーロ集中科学ガイド：ウルトラディアンリズム＆FAQ",
+    "methodDesc": "ポモドーロ・テクニックは、フランチェスコ・シリロによって開発された、25分の集中作業と5分の休憩を繰り返す時間管理手法です。",
+    "boundary": "生産性の手引き：このタイマーは持続可能な集中と疲労予防のための教育ツールです。ご自身のペースに合わせて調整してください。",
+    "benefitsHeading": "ポモドーロ法の3大原則",
+    "rule25": "25分の集中スプリント:",
+    "desc25": "通知を遮断し、単一のタスクに全エネルギーを注ぎます。",
+    "rule5": "5分の脳の休息:",
+    "desc5": "画面から離れ、前頭葉の神経疲労をリフレッシュします。",
+    "rule4Cycles": "4サイクル後の長期休憩:",
+    "desc4Cycles": "4回の完了ごとに15〜30分の長い休憩を挟み、集中力をリセットします。",
+    "faqTitle": "よくある質問 (FAQ)",
+    "faq1Q": "Q: なぜ25分が標準なのですか？",
+    "faq1A": "A: 先延ばし癖を防ぎ、集中力が途切れる前に深いフロー体験を維持するのに最適な時間だからです。",
+    "faq2Q": "Q: ウルトラディアンリズムと休憩の関係は？",
+    "faq2A": "A: 人間の生体リズムに基づき、計画的なマイクロブレイクを挟むことで持続的な集中が可能になります。",
+    "faq3Q": "Q: 集中時間をカスタマイズできますか？",
+    "faq3A": "A: はい。設定画面から作業時間や休憩時間を自由にカスタマイズ可能です。",
+    "faq4Q": "Q: セッションデータは保存されますか？",
+    "faq4A": "A: 一切外部送信されません。すべての記録はお使いの端末のブラウザ内に安全に保持されます。",
+    "reviewDate": "コンテンツ監修：2026年11月",
+    "reviewTeam": "DopaBrain 認知生産性チーム"
   }
 }

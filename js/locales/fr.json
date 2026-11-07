@@ -56,15 +56,14 @@
     "goalTip": "Fixez un objectif pour voir les statistiques de pomodoro mensuelles!"
   },
   "premium": {
-    "analysis": "Analyse de productivité IA",
-    "watchAd": "Regarder une publicité",
+    "analysis": "Session Insights",
     "unlock": "Débloquer premium",
     "details": "Afficher l'analyse détaillée",
     "insights": "Insights de productivité",
     "focus": "Score de focus",
     "consistency": "Cohérence",
     "efficiency": "Efficacité",
-    "recommendation": "Recommandation"
+    "recommendation": "Real-time focus and pacing metrics calculated from your completed sessions."
   },
   "notifications": {
     "workComplete": "Temps de travail terminé!",
@@ -93,5 +92,28 @@
     "stressCheck": "Bilan de Stress",
     "ddayCounter": "Compte à Rebours D-Day",
     "workStyle": "Style de Travail"
+  },
+  "about": {
+    "summaryTitle": "Guide Scientifique Pomodoro : Rythmes Ultradiens & FAQ",
+    "methodDesc": "La méthode Pomodoro de Francesco Cirillo cadence le travail intellectuel en blocs de concentration de 25 minutes entrecoupés de 5 minutes de repos.",
+    "boundary": "Conseil de productivité : Cet outil soutient un rythme de travail équilibré. Adaptez les durées selon votre charge mentale.",
+    "benefitsHeading": "Principes Fondamentaux de la Méthode",
+    "rule25": "Sprint de 25 Minutes :",
+    "desc25": "Focus exclusif sur une seule tâche sans distraction numérique.",
+    "rule5": "Pause Cognitive de 5 Minutes :",
+    "desc5": "S'éloigner des écrans pour renouveler l'énergie mentale.",
+    "rule4Cycles": "Grande Pause après 4 Cycles :",
+    "desc4Cycles": "Une pause prolongée de 15 à 30 minutes pour prévenir l'épuisement cognitif.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Q: Pourquoi 25 minutes par défaut ?",
+    "faq1A": "A: Cette durée neutralise la procrastination tout en maximisant la phase de flow intellectuel.",
+    "faq2Q": "Q: Quel est l'apport des rythmes ultradiens ?",
+    "faq2A": "A: Les micro-pauses régulières respectent les fluctuations énergétiques naturelles du système nerveux central.",
+    "faq3Q": "Q: Puis-je ajuster les durées de travail ?",
+    "faq3A": "A: Oui, personnalisez les intervalles de travail et de pause via l'icône Paramètres.",
+    "faq4Q": "Q: Mes statistiques sont-elles transmises ?",
+    "faq4A": "A: Jamais. Toutes vos données restent strictement confidentielles sur votre appareil.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "Équipe Performance Cognitive DopaBrain"
   }
 }
