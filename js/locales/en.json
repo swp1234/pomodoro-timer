@@ -153,5 +153,8 @@
         "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
       }
     ]
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content"
   }
 }

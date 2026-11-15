@@ -134,13 +134,7 @@ class PomodoroTimer {
 
   registerServiceWorker() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(registration => {
-          console.log('Service Worker registered:', registration);
-        })
-        .catch(error => {
-          console.log('Service Worker registration failed:', error);
-        });
+      navigator.serviceWorker.register('sw.js').catch(() => {});
     }
   }
 
@@ -844,14 +838,9 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// 오프라인 감지
-window.addEventListener('offline', () => {
-  console.log('App is offline');
-});
-
-window.addEventListener('online', () => {
-  console.log('App is online');
-});
+// 오프라인/온라인 상태 이벤트 훅
+window.addEventListener('offline', () => {});
+window.addEventListener('online', () => {});
 
 // 배터리 상태 감지 (선택사항)
 if (navigator.getBattery) {
