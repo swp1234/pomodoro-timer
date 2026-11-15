@@ -17,7 +17,7 @@
     "reset": "Sıfırla",
     "settings": "Ayarlar",
     "stats": "İstatistikler",
-    "aiAnalysis": "AI Analizi",
+    "aiAnalysis": "Oturum Analizi",
     "focus": "Odak modu",
     "exit": "Çık"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Asla. Tüm oturum bilgileri tamamen tarayıcınızın yerel depolamasında tutulur.",
     "reviewDate": "Editöryal İnceleme: Kasım 2026",
     "reviewTeam": "DopaBrain Bilişsel Performans Ekibi"
+  },
+  "share": {
+    "saveCard": "Kartı Kaydet",
+    "savingCard": "Oluşturuluyor...",
+    "savedCard": "Odak kartı kaydedildi!",
+    "shareX": "X'te Paylaş",
+    "shareUrl": "Bağlantıyı Kopyala",
+    "copiedUrl": "Bağlantı kopyalandı!",
+    "tweetText": "DopaBrain Pomodoro Zamanlayıcı ile derin odak sprintleri ve dinlenme dengesi.",
+    "cardBadge": "DOPABRAIN POMODORO",
+    "cardTitle": "Pomodoro Odak Ritmi",
+    "cardSubtitle": "Planlı odak blokları ve zihinsel yenilenme",
+    "cardFocusRhythm": "Yapılandırılmış Odak Bloğu",
+    "cardSessionsLabel": "BUGÜNKÜ DURUM",
+    "cardGoalLabel": "ÇALIŞMA MODU",
+    "cardCta": "Ücretsiz dene: dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Derin Odak Okumaları",
+    "subtitle": "Dikkat dağılmadan çalışma ve zaman bloklama üzerine temel kitaplar",
+    "badge": "Kitap",
+    "affiliateNote": "DopaBrain ücretsiz araçlarını destekleyen kitap yönlendirme bağlantıları içerir.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Pürdikkat (Deep Work)",
+        "author": "Cal Newport",
+        "note": "Kesintisiz zihinsel odaklanma kurmak için uygulamalı ilkeler.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "Pomodoro Tekniği",
+        "author": "Francesco Cirillo",
+        "note": "Zaman kutulu sprint ve kısa mola sisteminin özgün el kitabı.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

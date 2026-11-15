@@ -17,7 +17,7 @@
     "reset": "Reset",
     "settings": "Settings",
     "stats": "Statistics",
-    "aiAnalysis": "AI Analysis",
+    "aiAnalysis": "Session Insights",
     "focus": "Focus Mode",
     "exit": "Exit"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Always. All session counts, daily streaks, and custom settings remain 100% on your device in local storage. No tracking data is sent to external servers.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Cognitive Performance Team"
+  },
+  "share": {
+    "saveCard": "Save Focus Card",
+    "savingCard": "Creating card...",
+    "savedCard": "Focus card saved!",
+    "shareX": "Share on X",
+    "shareUrl": "Copy Link",
+    "copiedUrl": "Focus link copied!",
+    "tweetText": "Structuring deep work sprints & restorative breaks with DopaBrain Pomodoro Timer.",
+    "cardBadge": "DOPABRAIN FOCUS TIMER",
+    "cardTitle": "Pomodoro Focus Rhythm",
+    "cardSubtitle": "Intentional sprints & restorative recovery",
+    "cardFocusRhythm": "Structured Focus Sprint",
+    "cardSessionsLabel": "TODAY STATUS",
+    "cardGoalLabel": "WORKFLOW MODE",
+    "cardCta": "Try free at dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Deep Focus Reading",
+    "subtitle": "Evidence-backed books on distraction-free work & time boxing",
+    "badge": "Book Pick",
+    "affiliateNote": "Contains book referral links supporting DopaBrain free tools.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Deep Work: Rules for Focused Success",
+        "author": "Cal Newport",
+        "note": "Practical systems for unbroken cognitive concentration without fragmentation.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "The Pomodoro Technique",
+        "author": "Francesco Cirillo",
+        "note": "The original sprint-and-recovery manual behind classic time-boxed focus.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

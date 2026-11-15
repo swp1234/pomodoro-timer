@@ -17,7 +17,7 @@
     "reset": "リセット",
     "settings": "設定",
     "stats": "統計",
-    "aiAnalysis": "AI分析",
+    "aiAnalysis": "セッション分析",
     "focus": "集中モード",
     "exit": "終了"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: 一切外部送信されません。すべての記録はお使いの端末のブラウザ内に安全に保持されます。",
     "reviewDate": "コンテンツ監修：2026年11月",
     "reviewTeam": "DopaBrain 認知生産性チーム"
+  },
+  "share": {
+    "saveCard": "集中カードを保存",
+    "savingCard": "作成中...",
+    "savedCard": "集中カードを保存しました！",
+    "shareX": "Xで共有",
+    "shareUrl": "リンクをコピー",
+    "copiedUrl": "リンクをコピーしました！",
+    "tweetText": "DopaBrain ポモドーロタイマーで深い集中と回復リズムを整えよう。",
+    "cardBadge": "DOPABRAIN 集中タイマー",
+    "cardTitle": "ポモドーロ集中リズム",
+    "cardSubtitle": "意図的なスプリントと認知リセット",
+    "cardFocusRhythm": "構造化フォーカス・スプリント",
+    "cardSessionsLabel": "本日の状態",
+    "cardGoalLabel": "ワークフロー",
+    "cardCta": "dopabrain.com/pomodoro-timer で無料体験"
+  },
+  "curated": {
+    "title": "深い集中を育てる推薦書籍",
+    "subtitle": "注意力の分散を防ぎ持続可能な集中力を養う定番書",
+    "badge": "書籍案内",
+    "affiliateNote": "無料ツール運営を支える紹介リンクが含まれています。",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Deep Work (大事なことに集中する)",
+        "author": "Cal Newport",
+        "note": "通知や分断を排し、高密度な認知集中を生み出す実践原則。",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "The Pomodoro Technique",
+        "author": "Francesco Cirillo",
+        "note": "25分集中・5分休憩メソッドを生んだタイムボックス実践ガイド。",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

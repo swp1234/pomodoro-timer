@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="description" content="Boost focus and productivity with the free Pomodoro Timer. Customizable work/break intervals, session tracking, and calming sounds. Try free!">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
   <meta name="theme-color" content="#0f0f23">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -105,6 +105,12 @@
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J8GSWM40TV');
+  </script>
   <title>Pomodoro Timer - Free Focus & Productivity Tool | DopaBrain</title>
     <!-- Schema.org - FAQPage -->
     <script type="application/ld+json">
@@ -231,7 +237,17 @@
         <button id="pause-btn" class="btn btn-secondary" data-i18n="buttons.pause" style="display: none;">일시정지</button>
         <button id="reset-btn" class="btn btn-secondary" data-i18n="buttons.reset">초기화</button>
       </div>
+
+      <!-- 공유 & 스토리 카드 -->
+      <div class="pomo-share-bar" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%;">
+        <button type="button" id="saveCardBtn" class="btn btn-secondary pomo-action-btn" data-i18n="share.saveCard">집중 카드 저장</button>
+        <button type="button" id="shareTwitterBtn" class="btn btn-secondary pomo-action-btn" data-i18n="share.shareX">X에 공유</button>
+        <button type="button" id="shareUrlBtn" class="btn btn-secondary pomo-action-btn" data-i18n="share.shareUrl">링크 복사</button>
+      </div>
     </div>
+
+    <section id="curated-resources-card" class="curated-resources-card" aria-label="Deep Focus Reading" style="max-width:420px;width:100%;margin:20px auto 0;padding:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;box-sizing:border-box;"></section>
+    <canvas id="shareCanvas" width="1080" height="1920" style="display:none;"></canvas>
   </main>
 
   <!-- 설정 모달 -->
@@ -317,12 +333,12 @@
           <div class="goal-text" id="goal-text">0 / 8</div>
         </div>
 
-        <!-- AI 분석 -->
+        <!-- 세션 인사이트 -->
         <div class="premium-section">
-          <div class="premium-badge" data-i18n="premium.analysis">AI 분석</div>
+          <div class="premium-badge" data-i18n="premium.analysis">세션 인사이트</div>
           <div class="premium-title" data-i18n="premium.insights">생산성 인사이트</div>
           <div class="premium-description" data-i18n="premium.recommendation">
-            광고를 시청하고 AI 기반 생산성 분석을 확인하세요
+            완료된 세션과 집중 주기를 바탕으로 산출된 실시간 생산성 지표입니다.
           </div>
           
 
@@ -448,7 +464,7 @@
       });
     });
   </script>
-  <div id="share-float" style="position:fixed;bottom:80px;right:16px;z-index:99"><button onclick="(async()=>{const u=location.href,t=document.title;if(typeof gtag==='function')gtag('event','share',{method:navigator.share?'native':'clipboard',app_name:'pomodoro-timer'});if(navigator.share){try{await navigator.share({title:t,url:u})}catch(e){}}else{await navigator.clipboard.writeText(u);this.textContent='✅';setTimeout(()=>this.textContent='📤',1500)}})()" style="width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:20px;cursor:pointer;backdrop-filter:blur(8px)">📤</button></div>
+  <div id="share-float" style="position:fixed;bottom:80px;right:16px;z-index:99"><button type="button" id="share-float-btn" aria-label="Share Pomodoro Timer" style="width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:20px;cursor:pointer;backdrop-filter:blur(8px)">📤</button></div>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -502,10 +518,10 @@
     <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
       <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>
       <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;">
-        <a href="/stress-check/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:0;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💆</span><span data-i18n="related.stressCheck" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Stress Check</span></a>
-        <a href="/dday-counter/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:0;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">📅</span><span data-i18n="related.ddayCounter" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">D-Day Counter</span></a>
-        <a href="/work-style/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:0;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💼</span><span data-i18n="related.workStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Work Style</span></a>
-        <a href="/detox-timer/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:0;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🧘</span><span data-i18n="related.detoxTimer" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Detox Timer</span></a>
+        <a href="/stress-check/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:44px;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💆</span><span data-i18n="related.stressCheck" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Stress Check</span></a>
+        <a href="/dday-counter/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:44px;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">📅</span><span data-i18n="related.ddayCounter" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">D-Day Counter</span></a>
+        <a href="/work-style/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:44px;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💼</span><span data-i18n="related.workStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Work Style</span></a>
+        <a href="/detox-timer/" class="related-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;min-width:44px;box-sizing:border-box;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🧘</span><span data-i18n="related.detoxTimer" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;word-break:break-word;">Detox Timer</span></a>
       </div>
     </div>
   <script src="/portal/js/cross-promo.js" defer></script>

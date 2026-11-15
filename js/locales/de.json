@@ -17,7 +17,7 @@
     "reset": "Zurücksetzen",
     "settings": "Einstellungen",
     "stats": "Statistiken",
-    "aiAnalysis": "KI-Analyse",
+    "aiAnalysis": "Sitzungs-Einblicke",
     "focus": "Fokus-Modus",
     "exit": "Beenden"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Niemals. Sämtliche Verlaufsdaten verbleiben ausschließlich lokal in Ihrem Browser.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Produktivitätsteam"
+  },
+  "share": {
+    "saveCard": "Fokuskarte speichern",
+    "savingCard": "Wird erstellt...",
+    "savedCard": "Fokuskarte gespeichert!",
+    "shareX": "Auf X teilen",
+    "shareUrl": "Link kopieren",
+    "copiedUrl": "Link kopiert!",
+    "tweetText": "Strukturierte Fokus-Sprints & erholsame Pausen mit dem DopaBrain Pomodoro Timer.",
+    "cardBadge": "DOPABRAIN POMODORO",
+    "cardTitle": "Pomodoro-Fokusrhythmus",
+    "cardSubtitle": "Gezielte Sprints & kognitive Erholung",
+    "cardFocusRhythm": "Strukturierter Fokus-Sprint",
+    "cardSessionsLabel": "HEUTIGER STATUS",
+    "cardGoalLabel": "ARBEITSMODUS",
+    "cardCta": "Kostenlos auf dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Lektüre für tiefe Konzentration",
+    "subtitle": "Praxisbücher für ablenkungsfreies Arbeiten und Time-Boxing",
+    "badge": "Buchtipp",
+    "affiliateNote": "Enthält Buchempfehlungs-Links zur Unterstützung kostenloser DopaBrain-Tools.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Konzentriert arbeiten (Deep Work)",
+        "author": "Cal Newport",
+        "note": "Methoden für tiefe, ungestörte Konzentration ohne ständige Unterbrechungen.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "Die Pomodoro-Technik",
+        "author": "Francesco Cirillo",
+        "note": "Das Originalhandbuch hinter strukturierten Sprints und kurzen Erholungspausen.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

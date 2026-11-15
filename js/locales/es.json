@@ -17,7 +17,7 @@
     "reset": "Reiniciar",
     "settings": "Configuración",
     "stats": "Estadísticas",
-    "aiAnalysis": "Análisis IA",
+    "aiAnalysis": "Análisis de sesión",
     "focus": "Modo enfoque",
     "exit": "Salir"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Jamás. Todos los datos permanecen 100% locales en su navegador.",
     "reviewDate": "Revisión Editorial: Noviembre 2026",
     "reviewTeam": "Equipo de Rendimiento Cognitivo DopaBrain"
+  },
+  "share": {
+    "saveCard": "Guardar Tarjeta",
+    "savingCard": "Creando...",
+    "savedCard": "¡Tarjeta guardada!",
+    "shareX": "Compartir en X",
+    "shareUrl": "Copiar enlace",
+    "copiedUrl": "¡Enlace copiado!",
+    "tweetText": "Organizando bloques de trabajo profundo y descansos con DopaBrain Pomodoro Timer.",
+    "cardBadge": "DOPABRAIN POMODORO",
+    "cardTitle": "Ritmo de Enfoque",
+    "cardSubtitle": "Sprints conscientes y pausas regeneradoras",
+    "cardFocusRhythm": "Sprint de Atención Plena",
+    "cardSessionsLabel": "ESTADO DE HOY",
+    "cardGoalLabel": "MODO DE FLUJO",
+    "cardCta": "Úsalo gratis en dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Lecturas para Enfoque Profundo",
+    "subtitle": "Libros clave sobre concentración sin distracciones y bloques de tiempo",
+    "badge": "Libro",
+    "affiliateNote": "Incluye enlaces de referencia que apoyan las herramientas gratuitas de DopaBrain.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Enfócate (Deep Work)",
+        "author": "Cal Newport",
+        "note": "Reglas prácticas para lograr concentración profunda en un entorno ruidoso.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "La Técnica Pomodoro",
+        "author": "Francesco Cirillo",
+        "note": "El manual original de sprints cronometrados y pausas breves.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

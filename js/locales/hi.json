@@ -17,7 +17,7 @@
     "reset": "रीसेट",
     "settings": "सेटिंग्स",
     "stats": "आँकड़े",
-    "aiAnalysis": "AI विश्लेषण",
+    "aiAnalysis": "सत्र अंतर्दृष्टि",
     "focus": "फोकस मोड",
     "exit": "बाहर निकलें"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: पूरी तरह से। सभी डेटा आपके ब्राउज़र में स्थानीय रूप से सुरक्षित रहता है।",
     "reviewDate": "संपादकीय समीक्षा: नवंबर 2026",
     "reviewTeam": "डोपाब्रेन संज्ञानात्मक उत्पादकता टीम"
+  },
+  "share": {
+    "saveCard": "फ़ोकस कार्ड सहेजें",
+    "savingCard": "तैयार हो रहा है...",
+    "savedCard": "फ़ोकस कार्ड सहेजा गया!",
+    "shareX": "X पर साझा करें",
+    "shareUrl": "लिंक कॉपी करें",
+    "copiedUrl": "लिंक कॉपी हो गया!",
+    "tweetText": "DopaBrain पोमोडोरो टाइमर के साथ गहन एकाग्रता और संतुलित विश्राम का अभ्यास।",
+    "cardBadge": "DOPABRAIN पोमोडोरो",
+    "cardTitle": "पोमोडोरो फ़ोकस लय",
+    "cardSubtitle": "संरचित कार्य स्प्रिंट और मानसिक विश्राम",
+    "cardFocusRhythm": "संरचित एकाग्रता स्प्रिंट",
+    "cardSessionsLabel": "आज की स्थिति",
+    "cardGoalLabel": "कार्य मोड",
+    "cardCta": "मुफ़्त उपयोग करें: dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "गहन एकाग्रता के लिए पुस्तकें",
+    "subtitle": "ध्यान भटकने से बचाने और समय-प्रबंधन सुधारने वाली प्रमुख पुस्तकें",
+    "badge": "पुस्तक",
+    "affiliateNote": "इसमें पुस्तक संदर्भ लिंक हैं जो DopaBrain के मुफ़्त टूल्स का समर्थन करते हैं।",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Deep Work: केंद्रित सफलता के नियम",
+        "author": "Cal Newport",
+        "note": "निरंतर एकाग्रता और गहन कार्य के व्यावहारिक नियम।",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "The Pomodoro Technique",
+        "author": "Francesco Cirillo",
+        "note": "नियमित समय-ब्लॉक और लघु विराम प्रणाली की मूल मार्गदर्शिका।",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

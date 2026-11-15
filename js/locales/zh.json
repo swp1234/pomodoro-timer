@@ -17,7 +17,7 @@
     "reset": "重置",
     "settings": "设置",
     "stats": "统计",
-    "aiAnalysis": "AI分析",
+    "aiAnalysis": "专注洞察",
     "focus": "专注模式",
     "exit": "退出"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: 绝不。所有专注记录均仅保存在您本地浏览器的储存空间中。",
     "reviewDate": "内容审阅：2026年11月",
     "reviewTeam": "DopaBrain 认知生产力团队"
+  },
+  "share": {
+    "saveCard": "保存专注卡片",
+    "savingCard": "正在生成...",
+    "savedCard": "专注卡片已保存！",
+    "shareX": "分享至 X",
+    "shareUrl": "复制链接",
+    "copiedUrl": "已复制分享链接！",
+    "tweetText": "正在用 DopaBrain 番茄钟建立规律的深度工作与休息节奏。",
+    "cardBadge": "DOPABRAIN 专注计时器",
+    "cardTitle": "番茄钟专注节律",
+    "cardSubtitle": "有节奏的专注冲刺与科学恢复",
+    "cardFocusRhythm": "结构化深度冲刺",
+    "cardSessionsLabel": "今日状态",
+    "cardGoalLabel": "工作模式",
+    "cardCta": "前往 dopabrain.com/pomodoro-timer 免费使用"
+  },
+  "curated": {
+    "title": "深度专注延伸阅读",
+    "subtitle": "减少干扰、建立高效时间块管理体系的经典书籍",
+    "badge": "精选图书",
+    "affiliateNote": "包含支持 DopaBrain 免费工具运营的推荐图书链接。",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "深度工作 (Deep Work)",
+        "author": "Cal Newport",
+        "note": "在充斥分心的环境中打造无间断高价值专注的系统法则。",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "番茄工作法 (The Pomodoro Technique)",
+        "author": "Francesco Cirillo",
+        "note": "番茄计时法创始人的原版时间块冲刺与复盘实践指南。",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

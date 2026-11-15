@@ -85,6 +85,7 @@ class I18n {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
       const text = this.t(key);
+      if (!text || text === key) return;
 
       if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
         if (element.hasAttribute('placeholder')) {
@@ -145,3 +146,4 @@ class I18n {
 
 // 전역 i18n 인스턴스
 const i18n = new I18n();
+window.i18n = i18n;

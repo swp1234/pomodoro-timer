@@ -16,6 +16,7 @@ class PomodoroTimer {
     this.todayGoal = 8;
     this.timerInterval = null;
     this.progress = 0;
+    this.hasTrackedStart = false;
 
     // 알림 설정
     this.notificationEnabled = true;
@@ -65,6 +66,8 @@ class PomodoroTimer {
     // 초기 UI 업데이트
     this.updateDisplay();
     this.updateStats();
+    this.updateLangMenu();
+    this.renderCuratedResources();
   }
 
   setupEventListeners() {
@@ -100,8 +103,14 @@ class PomodoroTimer {
         this.updateLangMenu();
         document.getElementById('lang-menu').classList.add('hidden');
         this.updateDisplay();
+        this.renderCuratedResources();
       });
     });
+
+    document.getElementById('saveCardBtn')?.addEventListener('click', () => this.generateStoryCard());
+    document.getElementById('shareTwitterBtn')?.addEventListener('click', () => this.shareOnX());
+    document.getElementById('shareUrlBtn')?.addEventListener('click', () => this.copyShareUrl('button'));
+    document.getElementById('share-float-btn')?.addEventListener('click', () => this.shareNativeOrCopy());
 
     // 키보드 단축키
     document.addEventListener('keydown', (e) => {
@@ -139,6 +148,16 @@ class PomodoroTimer {
     if (this.isRunning) return;
 
     this.isRunning = true;
+    if (!this.hasTrackedStart) {
+      this.hasTrackedStart = true;
+      if (typeof gtag === 'function') {
+        gtag('event', 'test_start', {
+          app_name: 'pomodoro-timer',
+          mode: this.isWorkMode ? 'work' : 'break',
+          lang: i18n.getCurrentLanguage()
+        });
+      }
+    }
     this.startBtn.style.display = 'none';
     this.pauseBtn.style.display = 'flex';
     this.pauseBtn.textContent = i18n.t('buttons.pause');
@@ -172,6 +191,7 @@ class PomodoroTimer {
 
   reset() {
     this.isRunning = false;
+    this.hasTrackedStart = false;
     clearInterval(this.timerInterval);
 
     this.isWorkMode = true;
@@ -187,6 +207,22 @@ class PomodoroTimer {
   complete() {
     clearInterval(this.timerInterval);
     this.isRunning = false;
+    this.hasTrackedStart = false;
+
+    const completedMode = this.isWorkMode ? 'focus_cycle_complete' : 'break_cycle_complete';
+    if (typeof gtag === 'function') {
+      const lang = i18n.getCurrentLanguage();
+      gtag('event', 'test_complete', {
+        app_name: 'pomodoro-timer',
+        result_type: completedMode,
+        lang
+      });
+      gtag('event', 'pomodoro_complete', {
+        app_name: 'pomodoro-timer',
+        result_type: completedMode,
+        lang
+      });
+    }
 
     // 알림음
     if (this.soundEnabled) {
@@ -454,6 +490,295 @@ class PomodoroTimer {
       }
     });
   }
+
+  getShareUrl() {
+    const lang = i18n.getCurrentLanguage() || 'ko';
+    return `${window.location.origin}/pomodoro-timer/?lang=${encodeURIComponent(lang)}&utm_source=share`;
+  }
+
+  showToast(message) {
+    let toast = document.getElementById('pomo-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'pomo-toast';
+      toast.className = 'pomo-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('visible');
+    clearTimeout(this.toastTimer);
+    this.toastTimer = setTimeout(() => {
+      toast.classList.remove('visible');
+    }, 2200);
+  }
+
+  async copyShareUrl(methodLabel = 'clipboard') {
+    const shareUrl = this.getShareUrl();
+    const copiedText = i18n.t('share.copiedUrl') !== 'share.copiedUrl' ? i18n.t('share.copiedUrl') : 'Link copied!';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+      } catch (e) {}
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = shareUrl;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      ta.remove();
+    }
+    this.showToast(copiedText);
+    if (typeof gtag === 'function') {
+      gtag('event', 'share', {
+        method: methodLabel,
+        app_name: 'pomodoro-timer',
+        lang: i18n.getCurrentLanguage()
+      });
+    }
+  }
+
+  async shareNativeOrCopy() {
+    const shareUrl = this.getShareUrl();
+    const title = i18n.t('app.title') !== 'app.title' ? i18n.t('app.title') : document.title;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, url: shareUrl });
+        if (typeof gtag === 'function') {
+          gtag('event', 'share', {
+            method: 'native',
+            app_name: 'pomodoro-timer',
+            lang: i18n.getCurrentLanguage()
+          });
+        }
+        return;
+      } catch (e) {
+        if (e && e.name === 'AbortError') return;
+      }
+    }
+    await this.copyShareUrl('clipboard');
+  }
+
+  shareOnX() {
+    const shareUrl = this.getShareUrl();
+    const tweetText = i18n.t('share.tweetText') !== 'share.tweetText'
+      ? i18n.t('share.tweetText')
+      : 'Structuring deep work sprints & restorative breaks with DopaBrain Pomodoro Timer.';
+    const intentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(shareUrl)}`;
+    window.open(intentUrl, '_blank', 'noopener,noreferrer');
+    if (typeof gtag === 'function') {
+      gtag('event', 'share', {
+        method: 'twitter',
+        app_name: 'pomodoro-timer',
+        lang: i18n.getCurrentLanguage()
+      });
+    }
+  }
+
+  generateStoryCard() {
+    const canvas = document.getElementById('shareCanvas');
+    const saveBtn = document.getElementById('saveCardBtn');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const lang = i18n.getCurrentLanguage() || 'ko';
+    const tr = (key, fallback) => {
+      const v = i18n.t(key);
+      return v && v !== key ? v : fallback;
+    };
+
+    if (saveBtn) {
+      saveBtn.disabled = true;
+      saveBtn.textContent = tr('share.savingCard', 'Creating card...');
+    }
+
+    const w = 1080;
+    const h = 1920;
+    canvas.width = w;
+    canvas.height = h;
+
+    const grad = ctx.createLinearGradient(0, 0, w, h);
+    grad.addColorStop(0, '#0f172a');
+    grad.addColorStop(0.5, '#1e1b4b');
+    grad.addColorStop(1, '#3b0a19');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, w, h);
+
+    ctx.fillStyle = 'rgba(231, 76, 60, 0.16)';
+    ctx.beginPath();
+    ctx.arc(540, 620, 320, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.strokeStyle = 'rgba(231, 76, 60, 0.75)';
+    ctx.lineWidth = 10;
+    ctx.beginPath();
+    ctx.arc(540, 620, 260, -Math.PI / 2, Math.PI * 1.15);
+    ctx.stroke();
+
+    ctx.fillStyle = '#fca5a5';
+    ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(tr('share.cardBadge', 'DOPABRAIN FOCUS TIMER'), 540, 170);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 64px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardTitle', 'Pomodoro Focus Rhythm'), 540, 270);
+
+    ctx.fillStyle = '#cbd5e1';
+    ctx.font = '34px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardSubtitle', 'Intentional sprints & restorative recovery'), 540, 330);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 120px monospace';
+    ctx.fillText(this.timerTime ? this.timerTime.textContent : '25:00', 540, 645);
+
+    ctx.fillStyle = '#fca5a5';
+    ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardFocusRhythm', 'Structured Focus Sprint'), 540, 725);
+
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.18)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(110, 1020, 860, 420, 32);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = 'bold 28px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardSessionsLabel', 'TODAY STATUS'), 175, 1110);
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 46px system-ui, -apple-system, sans-serif';
+    ctx.fillText(`${tr('stats.completed', 'Completed')}: ${this.completedToday} / ${this.todayGoal}`, 175, 1175);
+
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = 'bold 28px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardGoalLabel', 'WORKFLOW MODE'), 175, 1295);
+    ctx.fillStyle = '#fca5a5';
+    ctx.font = 'bold 44px system-ui, -apple-system, sans-serif';
+    const modeLabel = this.isWorkMode ? tr('timer.work', 'Work Time') : tr('timer.break', 'Break Time');
+    ctx.fillText(modeLabel, 175, 1360);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#e2e8f0';
+    ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+    ctx.fillText(tr('share.cardCta', 'Try free at dopabrain.com/pomodoro-timer'), 540, 1730);
+
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '26px system-ui, -apple-system, sans-serif';
+    ctx.fillText(`dopabrain.com/pomodoro-timer/?lang=${lang}`, 540, 1795);
+
+    try {
+      const dataUrl = canvas.toDataURL('image/png');
+      const link = document.createElement('a');
+      link.download = 'dopabrain-pomodoro-focus.png';
+      link.href = dataUrl;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (e) {}
+
+    this.showToast(tr('share.savedCard', 'Focus card saved!'));
+    if (typeof gtag === 'function') {
+      gtag('event', 'save_image', {
+        app_name: 'pomodoro-timer',
+        result_type: this.isWorkMode ? 'work_sprint' : 'recovery_break',
+        lang
+      });
+    }
+
+    if (saveBtn) {
+      setTimeout(() => {
+        saveBtn.disabled = false;
+        saveBtn.textContent = tr('share.saveCard', 'Save Focus Card');
+      }, 600);
+    }
+  }
+
+  renderCuratedResources() {
+    const container = document.getElementById('curated-resources-card');
+    if (!container) return;
+
+    const curated = i18n.t('curated');
+    if (!curated || typeof curated !== 'object' || !Array.isArray(curated.books)) return;
+
+    const lang = i18n.getCurrentLanguage() || 'ko';
+    container.textContent = '';
+
+    const header = document.createElement('div');
+    header.className = 'curated-resources-header';
+    const titleEl = document.createElement('h3');
+    titleEl.className = 'curated-resources-title';
+    titleEl.textContent = curated.title || '';
+    const subEl = document.createElement('p');
+    subEl.className = 'curated-resources-subtitle';
+    subEl.textContent = curated.subtitle || '';
+    header.appendChild(titleEl);
+    header.appendChild(subEl);
+
+    const list = document.createElement('div');
+    list.className = 'curated-resources-list';
+
+    curated.books.forEach((book) => {
+      const link = document.createElement('a');
+      link.className = 'curated-book-link';
+      link.href = book.url;
+      link.target = '_blank';
+      link.rel = 'sponsored noopener noreferrer';
+
+      const meta = document.createElement('div');
+      meta.className = 'curated-book-meta';
+
+      const bTitle = document.createElement('span');
+      bTitle.className = 'curated-book-title';
+      bTitle.textContent = book.title || '';
+
+      const bAuthor = document.createElement('span');
+      bAuthor.className = 'curated-book-author';
+      bAuthor.textContent = book.author || '';
+
+      const bNote = document.createElement('span');
+      bNote.className = 'curated-book-note';
+      bNote.textContent = book.note || '';
+
+      meta.appendChild(bTitle);
+      meta.appendChild(bAuthor);
+      meta.appendChild(bNote);
+
+      const badge = document.createElement('span');
+      badge.className = 'curated-book-badge';
+      badge.textContent = curated.badge || 'Book';
+
+      link.appendChild(meta);
+      link.appendChild(badge);
+
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'curated_resource_click', {
+            app_name: 'pomodoro-timer',
+            resource_type: 'book',
+            item_id: book.id || 'book',
+            lang
+          });
+        }
+      });
+
+      list.appendChild(link);
+    });
+
+    const noteEl = document.createElement('p');
+    noteEl.className = 'curated-affiliate-note';
+    noteEl.textContent = curated.affiliateNote || '';
+
+    container.appendChild(header);
+    container.appendChild(list);
+    container.appendChild(noteEl);
+  }
 }
 
 // 앱 시작
@@ -488,12 +813,13 @@ function preserveLanguageLinks() {
       if (!a.__ctaBound) {
         a.__ctaBound = true;
         a.addEventListener('click', function() {
+          const liveLang = (window.i18n && typeof window.i18n.getCurrentLanguage === 'function' ? window.i18n.getCurrentLanguage() : null) || new URLSearchParams(window.location.search).get('lang') || 'ko';
           if (typeof gtag === 'function') {
             gtag('event', 'content_cta_click', {
               cta_surface: 'related_tools',
               destination: a.getAttribute('href'),
               source: 'pomodoro_timer_result',
-              lang: lang || 'ko'
+              lang: liveLang
             });
           }
         });

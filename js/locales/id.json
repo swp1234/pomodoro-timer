@@ -17,7 +17,7 @@
     "reset": "Setel ulang",
     "settings": "Pengaturan",
     "stats": "Statistik",
-    "aiAnalysis": "Analisis AI",
+    "aiAnalysis": "Wawasan Sesi",
     "focus": "Mode fokus",
     "exit": "Keluar"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Selalu. Seluruh riwayat sesi tersimpan 100% lokal di memori peramban Anda.",
     "reviewDate": "Tinjauan Redaksi: November 2026",
     "reviewTeam": "Tim Produktivitas Kognitif DopaBrain"
+  },
+  "share": {
+    "saveCard": "Simpan Kartu Fokus",
+    "savingCard": "Membuat...",
+    "savedCard": "Kartu fokus tersimpan!",
+    "shareX": "Bagikan ke X",
+    "shareUrl": "Salin Tautan",
+    "copiedUrl": "Tautan disalin!",
+    "tweetText": "Menjaga ritme kerja terfokus dan jeda teratur dengan DopaBrain Pomodoro Timer.",
+    "cardBadge": "DOPABRAIN POMODORO",
+    "cardTitle": "Ritme Fokus Pomodoro",
+    "cardSubtitle": "Sesi terarah & pemulihan kognitif",
+    "cardFocusRhythm": "Sprint Fokus Terstruktur",
+    "cardSessionsLabel": "STATUS HARI INI",
+    "cardGoalLabel": "MODE ALUR KERJA",
+    "cardCta": "Coba gratis di dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Bacaan Fokus Mendalam",
+    "subtitle": "Buku teruji untuk kerja bebas distraksi dan manajemen waktu blok",
+    "badge": "Buku",
+    "affiliateNote": "Memuat tautan referensi buku untuk mendukung alat gratis DopaBrain.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Deep Work: Aturan Sukses Terfokus",
+        "author": "Cal Newport",
+        "note": "Strategi praktis menjaga konsentrasi utuh di tengah distraksi digital.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "The Pomodoro Technique",
+        "author": "Francesco Cirillo",
+        "note": "Panduan asli metode sprint waktu terukur dan jeda pemulihan.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

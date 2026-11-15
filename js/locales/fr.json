@@ -17,7 +17,7 @@
     "reset": "Réinitialiser",
     "settings": "Paramètres",
     "stats": "Statistiques",
-    "aiAnalysis": "Analyse IA",
+    "aiAnalysis": "Aperçu de session",
     "focus": "Mode focus",
     "exit": "Quitter"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: Jamais. Toutes vos données restent strictement confidentielles sur votre appareil.",
     "reviewDate": "Revue Éditoriale : Novembre 2026",
     "reviewTeam": "Équipe Performance Cognitive DopaBrain"
+  },
+  "share": {
+    "saveCard": "Enregistrer la carte",
+    "savingCard": "Création...",
+    "savedCard": "Carte enregistrée !",
+    "shareX": "Partager sur X",
+    "shareUrl": "Copier le lien",
+    "copiedUrl": "Lien copié !",
+    "tweetText": "Structurer mes cycles de concentration et pauses avec DopaBrain Pomodoro Timer.",
+    "cardBadge": "DOPABRAIN POMODORO",
+    "cardTitle": "Rythme Focus Pomodoro",
+    "cardSubtitle": "Sprints ciblés & récupération cognitive",
+    "cardFocusRhythm": "Sprint de Concentration",
+    "cardSessionsLabel": "STATUT DU JOUR",
+    "cardGoalLabel": "MODE DE FLUX",
+    "cardCta": "Gratuit sur dopabrain.com/pomodoro-timer"
+  },
+  "curated": {
+    "title": "Lectures sur la concentration",
+    "subtitle": "Ouvrages de référence sur le travail sans distraction et le time-boxing",
+    "badge": "Livre",
+    "affiliateNote": "Contient des liens de recommandation soutenant les outils gratuits DopaBrain.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "Deep Work : Retrouver la concentration",
+        "author": "Cal Newport",
+        "note": "Principes concrets pour travailler intensément sans fragmentation attentionnelle.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "La Technique Pomodoro",
+        "author": "Francesco Cirillo",
+        "note": "Le guide fondateur des sprints minutés et pauses réparatrices.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }

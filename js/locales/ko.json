@@ -17,7 +17,7 @@
     "reset": "초기화",
     "settings": "설정",
     "stats": "통계",
-    "aiAnalysis": "AI 분석",
+    "aiAnalysis": "세션 인사이트",
     "focus": "집중 모드",
     "exit": "나가기"
   },
@@ -115,5 +115,43 @@
     "faq4A": "A: 절대 전송되지 않습니다. 모든 완료 세션과 통계는 기기의 로컬 저장소(localStorage)에만 안전하게 보관됩니다.",
     "reviewDate": "콘텐츠 검수: 2026년 11월",
     "reviewTeam": "DopaBrain 인지생산성 연구팀"
+  },
+  "share": {
+    "saveCard": "집중 카드 저장",
+    "savingCard": "카드 생성 중...",
+    "savedCard": "집중 카드가 저장되었습니다!",
+    "shareX": "X에 공유",
+    "shareUrl": "링크 복사",
+    "copiedUrl": "포모도로 링크가 복사되었습니다!",
+    "tweetText": "DopaBrain 포모도로 타이머로 몰입 스프린트와 회복 루틴을 관리해 보세요.",
+    "cardBadge": "DOPABRAIN 포모도로 타이머",
+    "cardTitle": "포모도로 집중 리듬",
+    "cardSubtitle": "의도적 몰입과 회복 사이클",
+    "cardFocusRhythm": "구조화된 몰입 스프린트",
+    "cardSessionsLabel": "오늘 상태",
+    "cardGoalLabel": "집중 모드",
+    "cardCta": "dopabrain.com/pomodoro-timer에서 무료로 시작"
+  },
+  "curated": {
+    "title": "몰입과 시간 관리 추천 도서",
+    "subtitle": "산만함을 줄이고 깊은 집중력을 기르는 검증된 필독서",
+    "badge": "추천 도서",
+    "affiliateNote": "도서 링크에는 DopaBrain 무료 도구 운영을 지원하는 제휴 링크가 포함됩니다.",
+    "books": [
+      {
+        "id": "deep-work",
+        "title": "딥 워크 (Deep Work)",
+        "author": "Cal Newport",
+        "note": "방해 요소를 차단하고 고밀도 지적 집중을 설계하는 실천 전략.",
+        "url": "https://www.amazon.com/dp/1455586692?tag=dopabrain-20"
+      },
+      {
+        "id": "pomodoro-technique",
+        "title": "포모도로 테크닉 (The Pomodoro Technique)",
+        "author": "Francesco Cirillo",
+        "note": "25분 집중과 5분 휴식 사이클을 창안한 원조 타임박싱 매뉴얼.",
+        "url": "https://www.amazon.com/dp/1524760706?tag=dopabrain-20"
+      }
+    ]
   }
 }
