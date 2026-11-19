@@ -156,5 +156,11 @@
   },
   "accessibility": {
     "skipToMain": "Lewati ke konten utama"
+  },
+  "nextStep": {
+    "label": "Langkah Berikutnya",
+    "title": "Tes Tingkat Stres & Rencana 7 Hari",
+    "desc": "Cek keseimbangan stresmu di 5 area dan buat rencana pemulihan 7 hari gratis.",
+    "cta": "Mulai Tes Stres →"
   }
 }

@@ -156,5 +156,11 @@
   },
   "accessibility": {
     "skipToMain": "Aller au contenu principal"
+  },
+  "nextStep": {
+    "label": "Prochaine étape recommandée",
+    "title": "Test de Stress & Plan 7 Jours",
+    "desc": "Évaluez votre équilibre de stress sur 5 axes et recevez un plan sur 7 jours.",
+    "cta": "Tester mon stress →"
   }
 }

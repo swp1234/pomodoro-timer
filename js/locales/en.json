@@ -156,5 +156,11 @@
   },
   "accessibility": {
     "skipToMain": "Skip to main content"
+  },
+  "nextStep": {
+    "label": "Recommended Next Step",
+    "title": "Stress Level Check & 7-Day Plan",
+    "desc": "Check your current stress balance across 5 areas and build a private 7-day reset plan.",
+    "cta": "Take Stress Check →"
   }
 }

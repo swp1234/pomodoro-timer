@@ -156,5 +156,11 @@
   },
   "accessibility": {
     "skipToMain": "Zum Hauptinhalt springen"
+  },
+  "nextStep": {
+    "label": "Empfohlener nächster Schritt",
+    "title": "Stresslevel-Check & 7-Tage-Plan",
+    "desc": "Prüfe deine Stressbalance in 5 Bereichen und erstelle deinen privaten 7-Tage-Plan.",
+    "cta": "Stresstest starten →"
   }
 }
