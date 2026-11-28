@@ -1,23 +1,25 @@
 /* Skip link for accessibility */
 .skip-link {
     position: absolute;
-    top: -100px;
-    left: 0;
+    top: -999px;
+    left: 12px;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
     box-sizing: border-box;
-    background: var(--accent, #eb6f63);
+    background: #b91c1c;
     color: #fff;
     padding: 8px 16px;
     z-index: 10000;
     transition: top 0.2s;
     font-size: 14px;
-    border-radius: 0 0 4px 0;
+    font-weight: 700;
+    border-radius: 8px;
 }
 .skip-link:focus {
-    top: 0;
+    top: 12px;
 }
+:lang(ko) h1, :lang(ko) h2, :lang(ko) p { word-break: keep-all; overflow-wrap: break-word; }
 
 * {
   margin: 0;
@@ -147,7 +149,7 @@ header {
   border-radius: 50%;
   background: rgba(231, 76, 60, 0.2);
   border: 1px solid rgba(231, 76, 60, 0.3);
-  color: var(--primary);
+  color: #fca5a5;
   font-size: 20px;
   cursor: pointer;
   display: flex;
@@ -381,7 +383,7 @@ main {
   width: 44px;
   padding: 0;
   background: rgba(231, 76, 60, 0.2);
-  color: var(--primary);
+  color: #fca5a5;
   border: 1px solid rgba(231, 76, 60, 0.3);
   font-size: 20px;
 }
@@ -1028,10 +1030,11 @@ body.light-mode .modal-content,
 .theme-toggle {
   position: fixed;
   top: 12px;
-  right: 56px;
+  right: 72px;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
   border-radius: 50%;
   width: 44px;
   height: 44px;
